@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
 
 const AboutSection = () => {
     return (
@@ -83,14 +84,27 @@ const AboutSection = () => {
                             I’m constantly learning and exploring new technologies to stay ahead and improve my craft. My goal is to build impactful products and collaborate on ideas that make a difference.
                         </h2>
                     </motion.div>
-
                     <motion.div
-                        variants={{ hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 0.45, ease: "easeOut" } } }}
-                        className='mt-4 w-full flex justify-end'
+                        variants={{
+                            hidden: {},
+                            show: { transition: { staggerChildren: 0.12 } },
+                        }}
+                        initial="hidden"
+                        whileInView="show"
+                        viewport={{ once: true, amount: 0.25 }}
+                        className='justify-end flex w-full items-center'
                     >
-                        <p className='text-lg text-orange-500'>
-                            1.5+ years of experience
-                        </p>
+                        <motion.div
+                            variants={{ hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 1.25, ease: "easeOut" } } }}
+                            className='mt-4'
+                        >
+                            <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className='rounded-lg  gap-6 flex flex-col transition duration-300 text-center'>
+                                <p className=' border rounded-lg px-2 py-0.5 text-sm border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
+                                    1.5+ years of experience
+                                    <ArrowUpRight className='inline text-orange-500' size={16} />
+                                </p>
+                            </motion.div>
+                        </motion.div>
                     </motion.div>
                 </motion.div>
             </div>
