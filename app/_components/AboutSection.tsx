@@ -47,15 +47,6 @@ const AboutSection = () => {
                     viewport={{ once: true, amount: 0.25 }}
                     className='flex flex-col justify-center items-start'
                 >
-                    {/* <motion.div
-                        variants={{ hidden: { x: 40, opacity: 0 }, show: { x: 0, opacity: 1, transition: { duration: 0.45, ease: "easeOut" } } }}
-                        className="flex items-center gap-4 mb-4"
-                    >
-                        <div className="w-18 h-[1.2px] bg-black" />
-                        <p className="font-bold text-black-800 text-2xl md:text-3xl">
-                            Full Stack Web Developer
-                        </p>
-                    </motion.div> */}
 
                     <motion.div
                         variants={{ hidden: { x: 60, opacity: 0 }, show: { x: 0, opacity: 1, transition: { duration: 0.55, ease: "easeOut" } } }}

@@ -39,7 +39,7 @@ const ServiceSection = () => {
                     variants={{ hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 1.25, ease: "easeOut" } } }}
                     className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-12'
                 >
-                    <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.18, ease: "easeOut" }} className='border border-[#FF9330] w-full p-4 rounded-lg  gap-6 flex flex-col hover:bg-[#FF9330]/10 transition duration-300'>
+                    <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>
                         <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
                             <p>Full-Stack Web Development</p>
                         </div>
@@ -48,7 +48,7 @@ const ServiceSection = () => {
                             </p>
                         </div>
                     </motion.div>
-                    <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.18, ease: "easeOut" }} className='border border-[#FF9330] w-full p-4 rounded-lg  gap-6 flex flex-col hover:bg-[#FF9330]/10 transition duration-300'>
+                    <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>
                         <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
                             <p>Frontend Development (UI/UX)</p>
                         </div>
@@ -72,7 +72,7 @@ const ServiceSection = () => {
                     variants={{ hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 1.25, ease: "easeOut" } } }}
                     className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'
                 >
-                    <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.18, ease: "easeOut" }} className='border border-[#FF9330] w-full p-4 rounded-lg  gap-6 flex flex-col hover:bg-[#FF9330]/10 transition duration-300'>
+                    <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>
                         <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
                             <p>Backend Development & API Integration</p>
                         </div>
@@ -81,7 +81,7 @@ const ServiceSection = () => {
                             </p>
                         </div>
                     </motion.div>
-                    <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.18, ease: "easeOut" }} className='border border-[#FF9330] w-full p-4 rounded-lg  gap-6 flex flex-col hover:bg-[#FF9330]/10 transition duration-300'>
+                    <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>
                         <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
                             <p>Website Deployment & Optimization</p>
                         </div>
