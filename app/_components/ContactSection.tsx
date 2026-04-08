@@ -117,7 +117,7 @@ const ContactSection = () => {
                                 <Mail className="size-8" />
                                 <div className='flex flex-col items-start gap-0'>
                                     <h3 className='text-xl text-muted-foreground font-medium'>Email Me</h3>
-                                    <p className='text-xl font-semibold'>hello@example.com</p>
+                                    <p className='text-xl font-semibold'>gauravyd474@gmail.com</p>
                                 </div>
                             </motion.div>
                         </motion.div>
