@@ -2,7 +2,13 @@
 
 A modern personal portfolio built with Next.js and TypeScript showcasing projects, skills, services, and contact information.
 
-**Live demo:** <https://gauravkr-dev.vercel.app/>
+**Live demo:** <https://gauravkr-dev.vercel.app>
+
+
+
+<img width="1919" height="886" alt="Portfolio_new" src="https://github.com/user-attachments/assets/808af23a-f1c0-46ef-a3da-b05ee0e6fa49" />
+
+
 
 **Technologies:** Next.js (App Router), TypeScript, Tailwind/PostCSS, React
 
@@ -55,7 +61,7 @@ Open `http://localhost:3000` in your browser.
 - `npm run start` — Run production build locally
 - `npm run lint` — Run ESLint (if configured)
 
-## How to Customize
+## How to Customise
 
 - Update content in `app/_components/` (AboutSection, ProjectSection, etc.) to change displayed text and projects.
 - Replace images in `public/` and update references in the components.
@@ -75,5 +81,3 @@ Example (Vercel):
 Feel free to open issues or PRs for improvements. For local changes, follow the usual fork → branch → PR flow.
 
 ---
-
-*This README was generated and tailored for a Next.js portfolio located in this repository.*
