@@ -5,6 +5,7 @@ import AboutSection from './_components/AboutSection'
 import SkillSection from './_components/SkillSection'
 import ProjectSection from './_components/ProjectSection'
 import EducationSection from './_components/EducationSection'
+import { TestimonialsSection } from './_components/TestimonialSection'
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <SkillSection />
       <ProjectSection />
       <EducationSection />
+      <TestimonialsSection />
     </div>
   )
 }
