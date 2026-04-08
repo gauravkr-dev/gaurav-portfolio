@@ -90,7 +90,7 @@ const HeroSection = () => {
 
                         <motion.div
                             variants={{ hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 0.45, ease: "easeOut" } } }}
-                            className='flex flex-row items-center justify-between md:justify-start md:gap-8 w-full mt-12'
+                            className='flex flex-row items-center gap-8 w-full mt-12'
                         >
                             <div>
                                 <a href="#contact" className='text-lg font-medium bg-[#FFB646] border border-black rounded px-8 py-4 hover:bg-[#FFB646]/40'>
