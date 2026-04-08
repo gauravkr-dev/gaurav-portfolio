@@ -9,7 +9,7 @@ const navLinks = [
     { href: "#about", label: "About" },
     { href: "#prices", label: "Prices" },
     { href: "#testimonials", label: "Testimonials" },
-    { href: "#contact", label: "Contact" },
+    { href: "#education", label: "Education" },
 ];
 
 
@@ -64,11 +64,9 @@ export function Footer() {
                     <p className="inline-flex items-center gap-1 text-black">
                         <span>Built by</span>
                         <a
-                            aria-label="x/twitter"
+                            aria-label="Gaurav's Portfolio"
                             className="inline-flex items-center gap-1 text-black hover:text-orange-500 hover:underline"
-                            href={"#"}
-                            rel="noreferrer"
-                            target="_blank"
+                            href={"https://gauravkr-dev.vercel.app/"}
                         >
                             <img
                                 alt="Gaurav"

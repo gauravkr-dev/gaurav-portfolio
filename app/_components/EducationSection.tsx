@@ -5,7 +5,7 @@ import React from 'react'
 
 const EducationSection = () => {
     return (
-        <section id="services" className='bg-white px-4 md:px-12 py-16'>
+        <section id="education" className='bg-white px-4 md:px-12 py-16'>
             <motion.div
                 variants={{
                     hidden: {},

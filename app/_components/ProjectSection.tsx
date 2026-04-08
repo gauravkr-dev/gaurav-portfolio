@@ -52,7 +52,7 @@ const ProjectSection = () => {
                                         <Eye className='inline text-orange-500' size={16} />
                                         View
                                     </a>
-                                    <a href="https://github.com/gauravkr-dev/GroundUp-Pulse" aria-label="GitHub" className=' text-sm border rounded-lg px-2 py-0.5 border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
+                                    <a href="https://github.com/gauravkr-dev/GroundUp-Pulse" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className=' text-sm border rounded-lg px-2 py-0.5 border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
                                         <img src="/Github.svg" alt="GitHub" className='h-4 w-4' />
                                         Code
                                     </a>
@@ -74,7 +74,7 @@ const ProjectSection = () => {
                                         <Eye className='inline text-orange-500' size={16} />
                                         View
                                     </a>
-                                    <a href="https://github.com/gauravkr-dev/BeBetter.ai" aria-label="GitHub" className=' text-sm border rounded-lg px-2 py-0.5 border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
+                                    <a href="https://github.com/gauravkr-dev/BeBetter.ai" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className=' text-sm border rounded-lg px-2 py-0.5 border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
                                         <img src="/Github.svg" alt="GitHub" className='h-4 w-4' />
                                         Code
                                     </a>
@@ -111,7 +111,7 @@ const ProjectSection = () => {
                                         <Eye className='inline text-orange-500' size={16} />
                                         View
                                     </a>
-                                    <a href="https://github.com/gauravkr-dev/NexFlow" aria-label="GitHub" className=' text-sm border rounded-lg px-2 py-0.5 border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
+                                    <a href="https://github.com/gauravkr-dev/NexFlow" aria-label="GitHub" target="_blank" rel="noopener noreferrer" className=' text-sm border rounded-lg px-2 py-0.5 border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
                                         <img src="/Github.svg" alt="GitHub" className='h-4 w-4' />
                                         Code
                                     </a>
