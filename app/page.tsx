@@ -6,6 +6,7 @@ import SkillSection from './_components/SkillSection'
 import ProjectSection from './_components/ProjectSection'
 import EducationSection from './_components/EducationSection'
 import { TestimonialsSection } from './_components/TestimonialSection'
+import { PricingSection } from './_components/PricingSection'
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
       <ProjectSection />
       <EducationSection />
       <TestimonialsSection />
+      <PricingSection />
     </div>
   )
 }
