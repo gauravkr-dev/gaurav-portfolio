@@ -90,7 +90,7 @@ const HeroSection = () => {
 
                         <motion.div
                             variants={{ hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 0.45, ease: "easeOut" } } }}
-                            className='flex flex-row items-center gap-8 mt-12'
+                            className='flex flex-row items-center justify-between md:justify-start md:gap-8 w-full mt-12'
                         >
                             <div>
                                 <a href="#contact" className='text-lg font-medium bg-[#FFB646] border border-black rounded px-8 py-4 hover:bg-[#FFB646]/40'>
@@ -113,7 +113,7 @@ const HeroSection = () => {
                         transition={{ duration: 0.6, ease: "easeOut" }}
                         viewport={{ once: true, amount: 0.25 }}
                     >
-                        <motion.img src="/gaurav.png" alt="Hero Image" className='w-full md:h-[80vh] h-[40vh] object-cover rounded' initial={{ scale: 0.98, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: true, amount: 0.25 }} />
+                        <motion.img src="/gaurav.png" alt="Hero Image" className='w-full md:h-[80vh] h-auto object-cover rounded' initial={{ scale: 0.98, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: true, amount: 0.25 }} />
                     </motion.div>
                 </div>
             </div>

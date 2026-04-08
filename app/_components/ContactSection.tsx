@@ -244,7 +244,7 @@ const ContactSection = () => {
                 >
                     <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className='rounded-lg items-center gap-6 flex flex-row transition duration-300 text-center'>
                         <div className="w-18 h-[1.2px] bg-black" />
-                        <p className='text-2xl font-semibold'>Follow Me</p>
+                        <p className='text-xl md:text-2xl font-semibold'>Follow Me</p>
                         <a href="https://github.com/gauravkr-dev" target="_blank" rel="noopener noreferrer" className='text-sm flex items-center gap-1'>
                             <img src="/Github.svg" alt="GitHub" className='h-7.5 w-7.5' />
                         </a>
