@@ -246,7 +246,7 @@ const ContactSection = () => {
                         <div className="w-18 h-[1.2px] bg-black" />
                         <p className='text-2xl font-semibold'>Follow Me</p>
                         <a href="https://github.com/gauravkr-dev" target="_blank" rel="noopener noreferrer" className='text-sm flex items-center gap-1'>
-                            <img src="/Github.svg" alt="GitHub" className='h-7 w-7' />
+                            <img src="/Github.svg" alt="GitHub" className='h-7.5 w-7.5' />
                         </a>
                         <a href="https://www.linkedin.com/in/gaurav474/" target="_blank" rel="noopener noreferrer" className='text-sm flex items-center gap-1'>
                             <img src="/Linkedin.svg" alt="LinkedIn" className='h-8 w-8' />

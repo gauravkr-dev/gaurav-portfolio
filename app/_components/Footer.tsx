@@ -59,7 +59,7 @@ export function Footer() {
                 </div>
 
                 <div className="flex items-center justify-between gap-4 border-t border-black py-4 text-sm">
-                    <p className="text-black">&copy; {new Date().getFullYear()} efferd</p>
+                    <p className="text-black">&copy; {new Date().getFullYear()} Gaurav</p>
 
                     <p className="inline-flex items-center gap-1 text-black">
                         <span>Built by</span>

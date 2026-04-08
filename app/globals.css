@@ -136,3 +136,19 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Hide scrollbar globally (cross-browser) */
+html,
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Chrome, Safari and Opera */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

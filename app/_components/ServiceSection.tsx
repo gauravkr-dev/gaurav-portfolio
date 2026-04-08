@@ -36,7 +36,7 @@ const ServiceSection = () => {
                 viewport={{ once: true, amount: 0.25 }}
             >
                 <motion.div
-                    variants={{ hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 1.25, ease: "easeOut" } } }}
+                    variants={{ hidden: { x: -40, opacity: 0 }, show: { x: 0, opacity: 1, transition: { duration: 1.25, ease: "easeOut" } } }}
                     className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-12'
                 >
                     <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>
@@ -69,7 +69,7 @@ const ServiceSection = () => {
                 viewport={{ once: true, amount: 0.25 }}
             >
                 <motion.div
-                    variants={{ hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 1.25, ease: "easeOut" } } }}
+                    variants={{ hidden: { x: -60, opacity: 0 }, show: { x: 0, opacity: 1, transition: { duration: 1.25, ease: "easeOut" } } }}
                     className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'
                 >
                     <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>

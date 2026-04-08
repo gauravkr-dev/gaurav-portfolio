@@ -35,39 +35,41 @@ const EducationSection = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
-                className='grid grid-cols-1 md:grid-cols-2 md:gap-6'
             >
                 <motion.div
                     variants={{ hidden: { x: -60, opacity: 0 }, show: { x: 0, opacity: 1, transition: { duration: 0.80, ease: "easeOut" } } }}
-                    className="flex gap-2 mt-12 flex-col border rounded-lg p-4 bg-gray-50 border-orange-500 transition duration-300"
+                    className='grid grid-cols-1 md:grid-cols-2 md:gap-6'
                 >
-                    <div className='flex items-center gap-4'>
-                        <img src="/iit_guwahati.png" alt="IIT Guwahati" className='w-16 h-16 object-contain' />
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-xl font-medium'>Indian Institute of Technology, Guwahati</p>
-                            <p className='hidden md:block'>Bachelor in Data Science and Artificial Intelligence</p>
+                    <div
+                        className="flex gap-2 mt-12 flex-col border rounded-lg p-4 bg-gray-50 border-orange-500 transition duration-300"
+                    >
+                        <div className='flex items-center gap-4'>
+                            <img src="/iit_guwahati.png" alt="IIT Guwahati" className='w-16 h-16 object-contain' />
+                            <div className='flex flex-col gap-1'>
+                                <p className='text-xl font-medium'>Indian Institute of Technology, Guwahati</p>
+                                <p className='hidden md:block'>Bachelor in Data Science and Artificial Intelligence</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p className='md:hidden'>Bachelor in Data Science and Artificial Intelligence</p>
+                        </div>
+                        <div className='flex items-center gap-4 justify-end'>
+                            <p>(2025 - Present)</p>
                         </div>
                     </div>
-                    <div>
-                        <p className='md:hidden'>Bachelor in Data Science and Artificial Intelligence</p>
-                    </div>
-                    <div className='flex items-center gap-4 justify-end'>
-                        <p>(2025 - Present)</p>
-                    </div>
-                </motion.div>
-                <motion.div
-                    variants={{ hidden: { x: 60, opacity: 0 }, show: { x: 0, opacity: 1, transition: { duration: 0.80, ease: "easeOut" } } }}
-                    className="flex gap-2 mt-12 flex-col border rounded-lg p-4 bg-gray-50 border-orange-500 transition duration-300"
-                >
-                    <div className='flex items-center gap-4'>
-                        <img src="/kls_college.png" alt="KLS College" className='w-16 h-16 object-contain rounded-full' />
-                        <div className='flex flex-col gap-1'>
-                            <p className='text-xl font-medium'>KLS College Nawada, Bihar</p>
-                            <p className=''>Mathematics and Science</p>
+                    <div
+                        className="flex gap-2 mt-12 flex-col border rounded-lg p-4 bg-gray-50 border-orange-500 transition duration-300"
+                    >
+                        <div className='flex items-center gap-4'>
+                            <img src="/kls_college.png" alt="KLS College" className='w-16 h-16 object-contain rounded-full' />
+                            <div className='flex flex-col gap-1'>
+                                <p className='text-xl font-medium'>KLS College Nawada, Bihar</p>
+                                <p className=''>Mathematics and Science</p>
+                            </div>
                         </div>
-                    </div>
-                    <div className='flex items-center gap-4 justify-end'>
-                        <p>(2022 - 2024)</p>
+                        <div className='flex items-center gap-4 justify-end'>
+                            <p>(2022 - 2024)</p>
+                        </div>
                     </div>
                 </motion.div>
             </motion.div>
