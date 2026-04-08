@@ -17,7 +17,9 @@ const HeroSection = () => {
 
                     <div className='flex space-x-4 text-gray-800'>
                         <div className='text-black text-sm hover:text-orange-600'>
-                            <a href="#resume" >Resume</a>
+                            <a href="/gaurav_resume.pdf" target="_blank" rel="noopener noreferrer">
+                                Resume
+                            </a>
                         </div>
 
                         <span className='text-black text-sm'>|</span>
