@@ -123,24 +123,26 @@ const ProjectSection = () => {
                     </motion.div>
                     <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className=' w-full rounded-lg  gap-6 flex flex-col transition duration-300'>
                         <div className='flex items-center'>
-                            <img src="/groundup_pulse.png" alt="GroundUp Pulse" className='w-full h-full object-contain border rounded-lg shadow-sm' />
+                            <img src="/open_source.png" alt="Open Source" className='w-full h-full object-contain border rounded-lg shadow-sm' />
                         </div>
                         <div className='flex flex-col items-start gap-2'>
                             <div className='flex items-center justify-between flex-row w-full'>
-                                <div className='text-xl font-medium text-orange-500'>GroundUp Pulse</div>
+                                <div className='text-xl font-medium text-orange-500'>Open Source</div>
                                 <div className='flex items-center gap-4'>
-                                    <a href="https://nextjourney.onrender.com/listings" target="_blank" rel="noopener noreferrer" className=' border rounded-lg px-2 py-0.5 text-sm border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
+                                    <a href="https://github.com/p2plabsxyz/peersky-browser" target="_blank" rel="noopener noreferrer" className=' border rounded-lg px-2 py-0.5 text-sm border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
                                         <Eye className='inline text-orange-500' size={16} />
                                         View
                                     </a>
-                                    <a href="https://github.com/gauravkr-dev/NextJourney" aria-label="GitHub" className=' text-sm border rounded-lg px-2 py-0.5 border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
+                                    <a href="https://github.com/p2plabsxyz/peersky-browser" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className=' text-sm border rounded-lg px-2 py-0.5 border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
                                         <img src="/Github.svg" alt="GitHub" className='h-4 w-4' />
                                         Code
                                     </a>
                                 </div>
                             </div>
 
-                            <p className=''>Connects citizens with authorities for faster issue resolution.</p>
+                            <p className="">
+                                Contributing to open source projects and fostering a collaborative development environment.
+                            </p>
                         </div>
                     </motion.div>
                 </motion.div>

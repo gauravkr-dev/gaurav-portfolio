@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion';
-import { ArrowUpRight } from 'lucide-react';
 
 const AboutSection = () => {
     return (
@@ -99,9 +98,8 @@ const AboutSection = () => {
                             className='mt-4'
                         >
                             <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className='rounded-lg  gap-6 flex flex-col transition duration-300 text-center'>
-                                <p className=' border rounded-lg px-2 py-0.5 text-sm border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
+                                <p className='text-lg text-orange-500 flex items-center gap-1'>
                                     1.5+ years of experience
-                                    <ArrowUpRight className='inline text-orange-500' size={16} />
                                 </p>
                             </motion.div>
                         </motion.div>
