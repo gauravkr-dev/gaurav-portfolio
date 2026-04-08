@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export function PricingSection() {
     return (
-        <section id="projects" className='bg-[#FFE9D9] px-4 md:px-12 py-16'>
+        <section id="prices" className='bg-[#FFE9D9] px-4 md:px-12 py-16'>
             <motion.div
                 variants={{
                     hidden: {},

@@ -8,6 +8,7 @@ import EducationSection from './_components/EducationSection'
 import { TestimonialsSection } from './_components/TestimonialSection'
 import { PricingSection } from './_components/PricingSection'
 import ContactSection from './_components/ContactSection'
+import { Footer } from './_components/Footer'
 
 const page = () => {
   return (
@@ -21,6 +22,7 @@ const page = () => {
       <TestimonialsSection />
       <PricingSection />
       <ContactSection />
+      <Footer />
     </div>
   )
 }
