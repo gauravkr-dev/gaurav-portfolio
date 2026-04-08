@@ -7,6 +7,7 @@ import ProjectSection from './_components/ProjectSection'
 import EducationSection from './_components/EducationSection'
 import { TestimonialsSection } from './_components/TestimonialSection'
 import { PricingSection } from './_components/PricingSection'
+import ContactSection from './_components/ContactSection'
 
 const page = () => {
   return (
@@ -19,6 +20,7 @@ const page = () => {
       <EducationSection />
       <TestimonialsSection />
       <PricingSection />
+      <ContactSection />
     </div>
   )
 }
