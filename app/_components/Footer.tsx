@@ -15,7 +15,7 @@ const navLinks = [
 
 export function Footer() {
     return (
-        <section id="about" className='bg-[#FFE9D9] px-4 md:px-12 '>
+        <section id="footer" className='bg-[#FFE9D9] px-4 md:px-12 overflow-hidden'>
             <footer className="w-full">
                 <div className="flex flex-col gap-6 py-6">
                     <motion.div

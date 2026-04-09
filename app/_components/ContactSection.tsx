@@ -76,7 +76,7 @@ const ContactSection = () => {
     }
 
     return (
-        <section id="contact" className='bg-white px-4 md:px-12 py-24'>
+        <section id="contact" className='bg-white px-4 md:px-12 py-24 overflow-hidden'>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                 <div>
                     {/* Left side */}

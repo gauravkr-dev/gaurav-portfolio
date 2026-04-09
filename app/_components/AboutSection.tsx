@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const AboutSection = () => {
     return (
-        <section id="about" className='bg-white px-4 md:px-12 py-16'>
+        <section id="about" className='bg-white px-4 md:px-12 py-16 overflow-hidden'>
             <motion.div
                 variants={{
                     hidden: {},
@@ -34,7 +34,7 @@ const AboutSection = () => {
                     viewport={{ once: true, amount: 0.25 }}
                     className='w-full h-auto'
                 >
-                    <motion.img src="/About.svg" alt="About Image" initial={{ scale: 0.98, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: true, amount: 0.25 }} />
+                    <motion.img src="/About.svg" alt="About Image" className="w-full h-auto max-w-full" initial={{ scale: 0.98, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: true, amount: 0.25 }} />
                 </motion.div>
                 {/* Right side */}
                 <motion.div
