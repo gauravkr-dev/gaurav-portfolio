@@ -122,7 +122,7 @@ const plans = [
         ),
         description: "Perfect for simple websites",
         name: "Basic Plan",
-        price: "₹2,999 – ₹5,999",
+        price: "₹4,999 – ₹7,999",
         features: [
             "Simple Static Website",
             "Responsive Design (Mobile Friendly)",
@@ -140,7 +140,7 @@ const plans = [
         description: "Best for growing businesses",
         name: "Standard Plan",
         badge: "Popular",
-        price: "₹7,999 – ₹12,999",
+        price: "₹14,999 – ₹29,999",
         features: [
             "Full-Stack Web Application",
             "Frontend + Backend Development",
@@ -159,7 +159,7 @@ const plans = [
         ),
         name: "Premium Plan",
         description: "For advanced and scalable projects",
-        price: "₹15,000+",
+        price: "₹39,999+",
         features: [
             "Everything in Standard Plan",
             "Fully Custom & Scalable Solution",
