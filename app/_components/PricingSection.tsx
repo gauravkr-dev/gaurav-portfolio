@@ -159,7 +159,7 @@ const plans = [
         ),
         name: "Premium Plan",
         description: "For advanced and scalable projects",
-        price: "₹39,999+",
+        price: "₹29,999+",
         features: [
             "Everything in Standard Plan",
             "Fully Custom & Scalable Solution",
