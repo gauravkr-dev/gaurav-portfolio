@@ -2,114 +2,145 @@
 import { cn } from "@/lib/utils";
 import * as PricingCard from "@/components/pricing-card";
 import { CheckCircle2, Users, Briefcase, Building, ArrowUpRight } from "lucide-react";
-import { motion } from "framer-motion";
+import AnimatedContent from "./AnimateVerticleContent";
+
 
 export function PricingSection() {
     return (
         <section id="prices" className='bg-[#FFE9D9] px-4 md:px-12 py-16'>
-            <motion.div
-                variants={{
-                    hidden: {},
-                    show: { transition: { staggerChildren: 0.12 } },
-                }}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
+            <div
             >
-                <div className='text-[#FF9330] font-bold text-lg mb-6'>Pricing</div>
-                <motion.div
-                    variants={{ hidden: { x: -60, opacity: 0 }, show: { x: 0, opacity: 1, transition: { duration: 0.80, ease: "easeOut" } } }}
-                    className="relative flex items-center gap-4 ml-2"
+                <AnimatedContent
+                    distance={-100}
+                    direction="horizontal"
+                    reverse={false}
+                    duration={0.8}
+                    ease="power3.out"
+                    initialOpacity={0}
+                    animateOpacity
+                    scale={1}
+                    threshold={0.1}
+                    delay={0}
                 >
-                    <div className='absolute md:h-18 md:w-18 w-12 h-12 rounded-full bg-[#FFB646] -left-4 -top-2 z-0 pointer-events-none' />
-                    <h1 className="text-4xl md:text-6xl font-bold text-black-800 relative z-10">
-                        Stay chill and <br /> pick your plan
-                    </h1>
-                </motion.div>
-            </motion.div>
-            <motion.div
-                variants={{
-                    hidden: {},
-                    show: { transition: { staggerChildren: 0.12 } },
-                }}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
+                    <div className='text-[#FF9330] font-bold text-lg mb-6'>Pricing</div>
+                </AnimatedContent>
+                <AnimatedContent
+                    distance={-100}
+                    direction="horizontal"
+                    reverse={false}
+                    duration={0.8}
+                    ease="power3.out"
+                    initialOpacity={0}
+                    animateOpacity
+                    scale={1}
+                    threshold={0.1}
+                    delay={0.1}
+                >
+                    <div
+                        className="relative flex items-center gap-4 ml-2"
+                    >
+                        <div className='absolute md:h-18 md:w-18 w-12 h-12 rounded-full bg-[#FFB646] -left-4 -top-2 z-0 pointer-events-none' />
+                        <h1 className="text-4xl md:text-6xl font-bold text-black-800 relative z-10">
+                            Stay chill and <br /> pick your plan
+                        </h1>
+                    </div>
+                </AnimatedContent>
+            </div>
+            <AnimatedContent
+                distance={100}
+                direction="vertical"
+                reverse={false}
+                duration={0.8}
+                ease="power3.out"
+                initialOpacity={0}
+                animateOpacity
+                scale={1}
+                threshold={0.1}
+                delay={0}
             >
-                <motion.div variants={{ hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 1.25, ease: "easeOut" } } }} className="grid w-full gap-4 md:grid-cols-3 mt-12">
-                    {plans.map((plan, index) => (
-                        <PricingCard.Card
-                            className={cn("w-full max-w-full", index === 1 && "md:scale-105")}
-                            key={plan.name}
-                        >
-                            <PricingCard.Header isPopular={index === 1}>
-                                <PricingCard.Plan>
-                                    <PricingCard.PlanName>
-                                        {plan.icon}
-                                        <span>{plan.name}</span>
-                                    </PricingCard.PlanName>
+
+                <div
+                >
+                    <div className="grid w-full gap-4 md:grid-cols-3 mt-18">
+                        {plans.map((plan, index) => (
+                            <PricingCard.Card
+                                className={cn("w-full max-w-full", index === 1 && "md:scale-105")}
+                                key={plan.name}
+                            >
+                                <PricingCard.Header isPopular={index === 1}>
+                                    <PricingCard.Plan>
+                                        <PricingCard.PlanName>
+                                            {plan.icon}
+                                            <span>{plan.name}</span>
+                                        </PricingCard.PlanName>
+                                        {plan.badge && (
+                                            <PricingCard.Badge>{plan.badge}</PricingCard.Badge>
+                                        )}
+                                    </PricingCard.Plan>
+                                    <PricingCard.Price>
+                                        <PricingCard.MainPrice>{plan.price}</PricingCard.MainPrice>
+                                    </PricingCard.Price>
                                     {plan.badge && (
-                                        <PricingCard.Badge>{plan.badge}</PricingCard.Badge>
+                                        <a href="#contact" className='block text-center text-lg font-medium bg-[#FFB646] border border-black rounded w-full py-1 hover:bg-[#FFB646]/40'>
+                                            Choose Plan
+                                            <ArrowUpRight className='ml-1 inline text-orange-500' size={18} />
+                                        </a>
                                     )}
-                                </PricingCard.Plan>
-                                <PricingCard.Price>
-                                    <PricingCard.MainPrice>{plan.price}</PricingCard.MainPrice>
-                                </PricingCard.Price>
-                                {plan.badge && (
-                                    <a href="#contact" className='block text-center text-lg font-medium bg-[#FFB646] border border-black rounded w-full py-1 hover:bg-[#FFB646]/40'>
-                                        Choose Plan
-                                        <ArrowUpRight className='ml-1 inline text-orange-500' size={18} />
-                                    </a>
-                                )}
-                                {!plan.badge && (
-                                    <a href="#contact" className='block text-center text-lg font-medium text-black bg-transparent border border-black hover:bg-[#FFB646]/40 rounded w-full py-1 duration-300'>
-                                        Get Started
-                                        <ArrowUpRight className='ml-1 inline text-orange-500' size={18} />
-                                    </a>
-                                )}
+                                    {!plan.badge && (
+                                        <a href="#contact" className='block text-center text-lg font-medium text-black bg-transparent border border-black hover:bg-[#FFB646]/40 rounded w-full py-1 duration-300'>
+                                            Get Started
+                                            <ArrowUpRight className='ml-1 inline text-orange-500' size={18} />
+                                        </a>
+                                    )}
 
 
-                            </PricingCard.Header>
+                                </PricingCard.Header>
 
-                            <PricingCard.Body>
-                                <PricingCard.Description>
-                                    {plan.description}
-                                </PricingCard.Description>
-                                <PricingCard.List>
-                                    {plan.features.map((item) => (
-                                        <PricingCard.ListItem className="text-xs" key={item}>
-                                            <CheckCircle2 aria-hidden="true" className="size-4 text-foreground" />
-                                            <span>{item}</span>
-                                        </PricingCard.ListItem>
-                                    ))}
-                                </PricingCard.List>
-                            </PricingCard.Body>
-                        </PricingCard.Card>
-                    ))}
-                </motion.div>
-            </motion.div>
+                                <PricingCard.Body>
+                                    <PricingCard.Description>
+                                        {plan.description}
+                                    </PricingCard.Description>
+                                    <PricingCard.List>
+                                        {plan.features.map((item) => (
+                                            <PricingCard.ListItem className="text-xs" key={item}>
+                                                <CheckCircle2 aria-hidden="true" className="size-4 text-foreground" />
+                                                <span>{item}</span>
+                                            </PricingCard.ListItem>
+                                        ))}
+                                    </PricingCard.List>
+                                </PricingCard.Body>
+                            </PricingCard.Card>
+                        ))}
+                    </div>
+                </div>
+            </AnimatedContent>
 
-            <motion.div
-                variants={{
-                    hidden: {},
-                    show: { transition: { staggerChildren: 0.12 } },
-                }}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
+            <div
             >
-                <motion.div
-                    variants={{ hidden: { y: 20, opacity: 0 }, show: { y: 0, opacity: 1, transition: { duration: 1.25, ease: "easeOut" } } }}
-                    className='mt-18 items-center justify-center flex mx-auto'
+                <AnimatedContent
+                    distance={100}
+                    direction="vertical"
+                    reverse={false}
+                    duration={0.8}
+                    ease="power3.out"
+                    initialOpacity={0}
+                    animateOpacity
+                    scale={1}
+                    threshold={0.1}
+                    delay={0}
                 >
-                    <motion.div transition={{ duration: 0.18, ease: "easeOut" }} className='rounded-lg  gap-6 flex flex-col transition duration-300 text-center'>
-                        <a href="#contact" className=' border rounded-lg px-2 py-1 text-sm border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
-                            Need a custom plan?
-                            <ArrowUpRight className='inline text-orange-500' size={16} />
-                        </a>
-                    </motion.div>
-                </motion.div>
-            </motion.div>
+                    <div
+                        className='mt-18 items-center justify-center flex mx-auto'
+                    >
+                        <div className='rounded-lg  gap-6 flex flex-col transition duration-300 text-center'>
+                            <a href="#contact" className=' border rounded-lg px-2 py-1 text-sm border-orange-500 hover:bg-orange-500/10 transition duration-300 flex items-center gap-1'>
+                                Need a custom plan?
+                                <ArrowUpRight className='inline text-orange-500' size={16} />
+                            </a>
+                        </div>
+                    </div>
+                </AnimatedContent>
+            </div>
         </section>
     );
 }
