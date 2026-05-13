@@ -6,9 +6,10 @@ import SkillSection from './_components/SkillSection'
 import ProjectSection from './_components/ProjectSection'
 import EducationSection from './_components/EducationSection'
 import { TestimonialsSection } from './_components/TestimonialSection'
-import { PricingSection } from './_components/PricingSection'
+import { PricingSection } from './_components/WorkingStyle'
 import ContactSection from './_components/ContactSection'
 import { Footer } from './_components/Footer'
+import CtaSection from './_components/CtaSection'
 
 const page = () => {
   return (
@@ -16,11 +17,12 @@ const page = () => {
       <HeroSection />
       <ServiceSection />
       <AboutSection />
+      <EducationSection />
       <SkillSection />
       <ProjectSection />
-      <EducationSection />
       <TestimonialsSection />
       <PricingSection />
+      <CtaSection />
       <ContactSection />
       <Footer />
     </div>

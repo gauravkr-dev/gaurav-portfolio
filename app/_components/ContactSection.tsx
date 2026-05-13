@@ -94,7 +94,7 @@ const ContactSection = () => {
                             threshold={0.1}
                             delay={0}
                         >
-                            <div className='text-[#FF9330] font-bold text-lg mb-6'>Contact</div>
+                            <div className='text-[#FF9330] font-bold text-lg mb-7'>Contact</div>
                         </AnimatedContent>
                         <AnimatedContent
                             distance={-100}
@@ -139,7 +139,7 @@ const ContactSection = () => {
                                     <Mail className="size-8" />
                                     <div className='flex flex-col items-start gap-0'>
                                         <h3 className='text-xl text-muted-foreground font-medium'>Email Me</h3>
-                                        <p className='text-xl font-semibold'>gauravyd474@gmail.com</p>
+                                        <p className='text-xl font-semibold'>gauravkumar803109@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
