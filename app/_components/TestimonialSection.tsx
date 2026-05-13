@@ -1,10 +1,10 @@
 "use client"
-import { motion } from 'framer-motion'
 import React from 'react'
 
 import { cn } from "@/lib/utils";
 import { QuoteIcon } from "lucide-react";
 import { DecorIcon } from '@/components/ui/docker-icon';
+import AnimatedContent from './AnimateVerticleContent';
 
 type Testimonial = {
     quote: string;
@@ -36,45 +36,69 @@ const testimonials: Testimonial[] = [
 export function TestimonialsSection() {
     return (
         <section id="testimonials" className='bg-white px-4 md:px-12 py-16'>
-            <motion.div
-                variants={{
-                    hidden: {},
-                    show: { transition: { staggerChildren: 0.12 } },
-                }}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
+            <div
             >
-                <div className='text-[#FF9330] font-bold text-lg mb-6'>Testimonials</div>
-                <motion.div
-                    variants={{ hidden: { x: -60, opacity: 0 }, show: { x: 0, opacity: 1, transition: { duration: 0.80, ease: "easeOut" } } }}
-                    className="relative flex items-center gap-4 ml-2"
+                <AnimatedContent
+                    distance={-100}
+                    direction="horizontal"
+                    reverse={false}
+                    duration={0.8}
+                    ease="power3.out"
+                    initialOpacity={0}
+                    animateOpacity
+                    scale={1}
+                    threshold={0.1}
+                    delay={0}
                 >
-                    <div className='absolute md:h-18 md:w-18 w-12 h-12 rounded-full bg-[#FFB646] -left-4 -top-2 z-0 pointer-events-none' />
-                    <h1 className="text-4xl md:text-6xl font-bold text-black-800 relative z-10">
-                        Client Feedback
-                    </h1>
-                </motion.div>
-            </motion.div>
-            <motion.div
-                variants={{
-                    hidden: {},
-                    show: { transition: { staggerChildren: 0.12 } },
-                }}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
+                    <div className='text-[#FF9330] font-bold text-lg mb-6'>Testimonials</div>
+                </AnimatedContent>
+                <AnimatedContent
+                    distance={-100}
+                    direction="horizontal"
+                    reverse={false}
+                    duration={0.8}
+                    ease="power3.out"
+                    initialOpacity={0}
+                    animateOpacity
+                    scale={1}
+                    threshold={0.1}
+                    delay={0.1}
+                >
+                    <div
+                        className="relative flex items-center gap-4 ml-2"
+                    >
+                        <div className='absolute md:h-18 md:w-18 w-12 h-12 rounded-full bg-[#FFB646] -left-4 -top-2 z-0 pointer-events-none' />
+                        <h1 className="text-4xl md:text-6xl font-bold text-black-800 relative z-10">
+                            Client Feedback
+                        </h1>
+                    </div>
+                </AnimatedContent>
+            </div>
+            <div
             >
-                <motion.div className="mx-auto mt-12 grid w-full max-w-5xl gap-8 md:grid-cols-3 md:gap-6" variants={{ hidden: { x: -60, opacity: 0 }, show: { x: 0, opacity: 1, transition: { duration: 0.80, ease: "easeOut" } } }}>
-                    {testimonials.map((testimonial, index) => (
-                        <TestimonialCard
-                            index={index}
-                            key={testimonial.name}
-                            testimonial={testimonial}
-                        />
-                    ))}
-                </motion.div>
-            </motion.div>
+                <AnimatedContent
+                    distance={100}
+                    direction="vertical"
+                    reverse={false}
+                    duration={0.8}
+                    ease="power3.out"
+                    initialOpacity={0}
+                    animateOpacity
+                    scale={1}
+                    threshold={0.1}
+                    delay={0.3}
+                >
+                    <div className="mx-auto mt-12 grid w-full max-w-5xl gap-8 md:grid-cols-3 md:gap-6" >
+                        {testimonials.map((testimonial, index) => (
+                            <TestimonialCard
+                                index={index}
+                                key={testimonial.name}
+                                testimonial={testimonial}
+                            />
+                        ))}
+                    </div>
+                </AnimatedContent>
+            </div>
 
         </section>
 
