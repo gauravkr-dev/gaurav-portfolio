@@ -6,7 +6,7 @@ import AnimatedContent from './AnimateVerticleContent'
 
 const ServiceSection = () => {
     return (
-        <section id="services" className='bg-white px-4 md:px-12 py-16'>
+        <section id="services" className='bg-white px-4 md:px-12 py-16 mb-6'>
             <div
             >
                 <AnimatedContent
@@ -65,9 +65,9 @@ const ServiceSection = () => {
                         delay={0.2}
                     >
                         <div className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300 border border-orange-500 hover:bg-orange-50 hover:border-orange-500/50 hover:translate-y-[-2px]'>
-                            <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
-
-                                <p>Full-Stack Web Development</p>
+                            <div className='flex items-start gap-3 text-orange-500 text-xl font-bold'>
+                                <svg className='flex-shrink-0' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"><path d="M12 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 12 18z" /><path d="M2 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 2 18z" /></g></svg>
+                                <p className='text-black'>Full-Stack Web Development</p>
                             </div>
                             <div>
                                 <p>I build complete web applications from start to finish, handling both client-side and server-side logic. My focus is on creating fast, scalable, and reliable solutions that solve real business problems.
@@ -90,8 +90,9 @@ const ServiceSection = () => {
                         delay={0.4}
                     >
                         <div className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300 border border-orange-500 hover:bg-orange-50 hover:border-orange-500/50 hover:translate-y-[-2px]'>
-                            <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
-                                <p>Frontend Development (UI/UX)</p>
+                            <div className='flex items-start gap-3 text-orange-500 text-xl font-bold'>
+                                <svg className='flex-shrink-0' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"><path d="M12 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 12 18z" /><path d="M2 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 2 18z" /></g></svg>
+                                <p className='text-black'>Frontend Development (UI/UX)</p>
                             </div>
                             <div>
                                 <p>I design and develop responsive and visually appealing user interfaces with a strong focus on usability. Every interface is optimized for smooth interaction and consistent experience across all devices.
@@ -119,8 +120,9 @@ const ServiceSection = () => {
                         delay={0.4}
                     >
                         <div className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300 border border-orange-500 hover:bg-orange-50 hover:border-orange-500/50 hover:translate-y-[-2px]'>
-                            <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
-                                <p>Backend Development & API Integration</p>
+                            <div className='flex items-start gap-3 text-orange-500 text-xl font-bold'>
+                                <svg className='flex-shrink-0' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"><path d="M12 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 12 18z" /><path d="M2 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 2 18z" /></g></svg>
+                                <p className='text-black'>Backend Development & API Integration</p>
                             </div>
                             <div>
                                 <p>I develop secure and efficient backend systems that manage data, logic, and integrations. My goal is to ensure smooth performance, structured architecture, and seamless communication within applications.
@@ -141,8 +143,9 @@ const ServiceSection = () => {
                         delay={0.6}
                     >
                         <div className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300 border border-orange-500 hover:bg-orange-50 hover:border-orange-500/50 hover:translate-y-[-2px]'>
-                            <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
-                                <p>Website Deployment & Optimization</p>
+                            <div className='flex items-start gap-3 text-orange-500 text-xl font-bold'>
+                                <svg className='flex-shrink-0' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"><path d="M12 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 12 18z" /><path d="M2 6a2 2 0 0 1 3.414-1.414l6 6a2 2 0 0 1 0 2.828l-6 6A2 2 0 0 1 2 18z" /></g></svg>
+                                <p className='text-black'>Website Deployment & Optimization</p>
                             </div>
                             <div>
                                 <p>I implement secure authentication systems and handle the complete deployment process. I ensure applications are optimized for performance, stability, and ready for real-world usage.

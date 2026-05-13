@@ -5,8 +5,8 @@ import AnimatedContent from './AnimateVerticleContent';
 
 const AboutSection = () => {
     return (
-        <section id="about" className='bg-white px-4 md:px-12 py-16 overflow-hidden'>
-            <div
+        <section id="about" className='bg-[#F5F5F5] px-4 md:px-12 overflow-hidden'>
+            <div className='mt-16'
             >
                 <AnimatedContent
                     distance={-100}
@@ -161,10 +161,10 @@ const AboutSection = () => {
                         animateOpacity
                         scale={1}
                         threshold={0.1}
-                        delay={0.4}
+                        delay={0.2}
                     >
                         <div
-                            className='justify-end flex w-full items-center md:justify-end'
+                            className='justify-end flex w-full items-center md:justify-end mb-12'
                         >
                             <div
                                 className='mt-4 md:text-right'

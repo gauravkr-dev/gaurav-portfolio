@@ -23,13 +23,12 @@ const skills = [
     { name: "Node.js", slug: "nodejs", category: "Backend" },
     { name: "Express.js", slug: "express", category: "Backend" },
     { name: "MongoDB", slug: "mongodb", category: "Backend" },
-    { name: "Next.js", slug: "nextjs", category: "Backend" },
     { name: "PostgreSQL", slug: "postgresql", category: "Backend" },
-    { name: "Firebase", slug: "firebase", category: "Backend" },
-    { name: "Supabase", slug: "supabase", category: "Backend" },
     { name: "Socket.io", slug: "socketio", category: "Backend" },
     { name: "tRPC", slug: "trpc", category: "Backend" },
     { name: "CloudFlare", slug: "cloudflare", category: "Backend" },
+    { name: "Firebase", slug: "firebase", category: "Backend" },
+    { name: "Supabase", slug: "supabase", category: "Backend" },
 
     //Tools
     { name: "GitHub", slug: "github", category: "Tools" },
@@ -90,11 +89,11 @@ const SkillSection = () => {
             <div
             >
                 <div
-                    className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-12'
+                    className='grid grid-cols-1 gap-8 mt-12'
                 >
                     <AnimatedContent
-                        distance={-100}
-                        direction="horizontal"
+                        distance={100}
+                        direction="vertical"
                         reverse={false}
                         duration={0.8}
                         ease="power3.out"
@@ -105,100 +104,12 @@ const SkillSection = () => {
                         delay={0.3}
                     >
                         <div className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>
-                            <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
-                                <p>Languages</p>
-                            </div>
-                            <div className='flex flex-wrap items-center gap-4'>
-                                {skills.filter(skill => skill.category === "Language").map((skill) => (
-                                    <div key={skill.slug} className='flex items-center gap-2 border border-[#FF9330] rounded-lg px-2 py-1'>
-                                        <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.slug}/${skill.slug}-original.svg`} alt={`${skill.name} icon`} className='w-6 h-6' />
-                                        <p className='text-gray-800'>{skill.name}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </AnimatedContent>
-                    <AnimatedContent
-                        distance={-100}
-                        direction="horizontal"
-                        reverse={false}
-                        duration={0.8}
-                        ease="power3.out"
-                        initialOpacity={0}
-                        animateOpacity
-                        scale={1}
-                        threshold={0.1}
-                        delay={0.5}
-                    >
-                        <div className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>
-                            <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
-                                <p>Frontend</p>
-                            </div>
-                            <div className='flex flex-wrap items-center gap-4'>
-                                {skills.filter(skill => skill.category === "Frontend").map((skill) => (
-                                    <div key={skill.slug} className='flex items-center gap-2 border border-[#FF9330] rounded-lg px-2 py-1'>
-                                        <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.slug}/${skill.slug}-original.svg`} alt={`${skill.name} icon`} className='w-6 h-6' />
-                                        <p className='text-gray-800'>{skill.name}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </AnimatedContent>
-                </div>
-            </div>
-            <div
 
-            >
-                <div
-                    className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-8'
-                >
-                    <AnimatedContent
-                        distance={-100}
-                        direction="horizontal"
-                        reverse={false}
-                        duration={0.8}
-                        ease="power3.out"
-                        initialOpacity={0}
-                        animateOpacity
-                        scale={1}
-                        threshold={0.1}
-                        delay={0.5}
-                    >
-                        <div className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>
-                            <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
-                                <p>Backend</p>
-                            </div>
                             <div className='flex flex-wrap items-center gap-4'>
-                                {skills.filter(skill => skill.category === "Backend").map((skill) => (
-                                    <div key={skill.slug} className='flex items-center gap-2 border border-[#FF9330] rounded-lg px-2 py-1'>
-                                        <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.slug}/${skill.slug}-original.svg`} alt={`${skill.name} icon`} className='w-6 h-6' />
-                                        <p className='text-gray-800'>{skill.name}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </AnimatedContent>
-                    <AnimatedContent
-                        distance={-100}
-                        direction="horizontal"
-                        reverse={false}
-                        duration={0.8}
-                        ease="power3.out"
-                        initialOpacity={0}
-                        animateOpacity
-                        scale={1}
-                        threshold={0.1}
-                        delay={0.7}
-                    >
-                        <div className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>
-                            <div className='flex items-center justify-between text-orange-500 text-xl font-bold'>
-                                <p>Tools</p>
-                            </div>
-                            <div className='flex flex-wrap items-center gap-4'>
-                                {skills.filter(skill => skill.category === "Tools").map((skill) => (
-                                    <div key={skill.slug} className='flex items-center gap-2 border border-[#FF9330] rounded-lg px-2 py-1'>
-                                        <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.slug}/${skill.slug}-original.svg`} alt={`${skill.name} icon`} className='w-6 h-6' />
-                                        <p className='text-gray-800'>{skill.name}</p>
+                                {skills.map((skill) => (
+                                    <div key={`${skill.category}-${skill.slug}`} className='flex items-center gap-2 border border-[#FF9330] rounded-lg px-2 py-1'>
+                                        <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.slug}/${skill.slug}-original.svg`} alt={`${skill.name} icon`} className='w-5 h-5' />
+                                        <p className='text-gray-800 text-sm'>{skill.name}</p>
                                     </div>
                                 ))}
                             </div>

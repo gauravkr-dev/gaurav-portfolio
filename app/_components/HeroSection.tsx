@@ -1,6 +1,6 @@
 "use client"
 /* eslint-disable @next/next/no-img-element */
-import { ArrowUpRight } from 'lucide-react'
+import { Send } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import AnimatedContent from './AnimateVerticleContent'
@@ -146,17 +146,12 @@ const HeroSection = () => {
                                 className='flex flex-row items-center gap-8 w-full mt-12'
                             >
                                 <div>
-                                    <a href="#contact" className='text-lg font-medium bg-[#FFB646] border border-black rounded px-8 py-4 hover:bg-[#FFB646]/40'>
-                                        Hire Me
-                                        <ArrowUpRight className='ml-1 inline text-orange-500' size={18} />
+                                    <a href="https://cal.com/gaurav-kumar-dev/web-development-consultation" target="_blank" rel="noopener noreferrer" className='text-lg font-medium bg-[#FFB646] border border-black rounded px-8 py-4 hover:bg-[#FFB646]/40'>
+                                        Book a Free Consultation
+                                        <Send className='ml-2 inline text-orange-500' size={18} />
                                     </a>
                                 </div>
-                                <div>
-                                    <a href="#projects" className='text-lg font-medium text-black bg-transparent border border-black hover:bg-[#FFB646]/40 rounded px-8 py-4 duration-300'>
-                                        My Work
-                                        <ArrowUpRight className='ml-1 inline text-orange-500' size={18} />
-                                    </a>
-                                </div>
+
                             </div>
                         </AnimatedContent>
                     </div>
