@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Syne } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/sonner"
+import Providers from "@/components/Providers";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -26,10 +26,13 @@ export default function RootLayout({
       lang="en"
       className={`${syne.className} ${syne.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        {children}
-        <Toaster />
-      </body>
+      <Providers>
+        <body className="min-h-full flex flex-col">
+
+          {children}
+
+        </body>
+      </Providers>
     </html>
   );
 }
