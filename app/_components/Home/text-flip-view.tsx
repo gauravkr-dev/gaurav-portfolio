@@ -5,7 +5,7 @@ import { motion, useInView, usePageInView } from "motion/react"
 
 import { TextFlip } from "@/components/text-flip"
 
-const WORDS = ["Full-Stack Developer", "Open Source Enthusiast", "Problem Solver", "Software Builder", "Product Engineer", "Lifelong Learner"]
+const WORDS = ["Software Engineer", "Full Stack Developer", "Tech Enthusiast", "Open Source Contributor", "Lifelong Learner", "Problem Solver", "Team Player", "Innovator", "Creative Thinker", "Passionate Coder"]
 
 export default function TextFlipView() {
     const ref = useRef<HTMLDivElement>(null)

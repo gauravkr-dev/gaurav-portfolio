@@ -1,4 +1,3 @@
-import Text3DFlip from '@/components/text-3d-flip'
 import { Button } from '@/components/ui/button'
 import { Lightbulb, Link, Mail, MapPin, Mars, Phone } from 'lucide-react'
 import React from 'react'
@@ -18,20 +17,9 @@ const GeneralInformationView = () => {
                         href="https://www.helloworld.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="transition-colors mx-1 text-foreground"
+                        className="transition-colors mx-1 text-foreground link"
                     >
-                        <Text3DFlip
-                            as="span"
-                            className="inline-flex"
-                            textClassName="bg-background text-foreground"
-                            flipTextClassName="bg-background text-foreground"
-                            rotateDirection="top"
-                            staggerDuration={0.03}
-                            staggerFrom="first"
-                            transition={{ type: "spring", damping: 25, stiffness: 160 }}
-                        >
-                            @SyncInfo
-                        </Text3DFlip>
+                        @SyncInfo
                     </a>
                 </span>
             </div>
@@ -47,20 +35,9 @@ const GeneralInformationView = () => {
                                 href="https://www.google.com/maps/place/Nalanda,+Bihar,+India/@25.1356762,85.4222651,12z/data=!3m1!4b1!4m5!3m4!1s0x39f2e6cfae7a9d9f:0x9c8c8b9a1a1a1a1!8m2!3d25.1356762!4d85.4222651"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="transition-colors mx-1 text-foreground"
+                                className="transition-colors mx-1 text-foreground link"
                             >
-                                <Text3DFlip
-                                    as="span"
-                                    className="inline-flex"
-                                    textClassName="bg-background text-foreground"
-                                    flipTextClassName="bg-background text-foreground"
-                                    rotateDirection="top"
-                                    staggerDuration={0.03}
-                                    staggerFrom="first"
-                                    transition={{ type: "spring", damping: 25, stiffness: 160 }}
-                                >
-                                    Nalanda, India
-                                </Text3DFlip>
+                                Nalanda, Bihar, India
                             </a>
                         </span>
                     </div>
@@ -71,20 +48,9 @@ const GeneralInformationView = () => {
                         <span className="text-muted-foreground">
                             <a
                                 href="tel:+911234567890"
-                                className="transition-colors mx-1 text-foreground"
+                                className="transition-colors mx-1 text-foreground link"
                             >
-                                <Text3DFlip
-                                    as="span"
-                                    className="inline-flex"
-                                    textClassName="bg-background text-foreground"
-                                    flipTextClassName="bg-background text-foreground"
-                                    rotateDirection="top"
-                                    staggerDuration={0.03}
-                                    staggerFrom="first"
-                                    transition={{ type: "spring", damping: 25, stiffness: 160 }}
-                                >
-                                    +91 977 157 0572
-                                </Text3DFlip>
+                                +91 977 157 0572
                             </a>
                         </span>
                     </div>
@@ -95,22 +61,11 @@ const GeneralInformationView = () => {
                         <span className="text-muted-foreground">
                             <a
                                 href="https://gauravkr-dev.vercel.app"
-                                className="transition-colors mx-1 text-foreground"
+                                className="transition-colors mx-1 text-foreground link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                <Text3DFlip
-                                    as="span"
-                                    className="inline-flex"
-                                    textClassName="bg-background text-foreground"
-                                    flipTextClassName="bg-background text-foreground"
-                                    rotateDirection="top"
-                                    staggerDuration={0.03}
-                                    staggerFrom="first"
-                                    transition={{ type: "spring", damping: 25, stiffness: 160 }}
-                                >
-                                    gauravkr-dev.vercel.app
-                                </Text3DFlip>
+                                gauravkr-dev.vercel.app
                             </a>
                         </span>
                     </div>
@@ -128,20 +83,9 @@ const GeneralInformationView = () => {
                         <span className="text-muted-foreground">
                             <a
                                 href="mailto:gauravlabs.dev@gmail.com"
-                                className="transition-colors mx-1 text-foreground"
+                                className="transition-colors mx-1 text-foreground link"
                             >
-                                <Text3DFlip
-                                    as="span"
-                                    className="inline-flex"
-                                    textClassName="bg-background text-foreground"
-                                    flipTextClassName="bg-background text-foreground"
-                                    rotateDirection="top"
-                                    staggerDuration={0.03}
-                                    staggerFrom="first"
-                                    transition={{ type: "spring", damping: 25, stiffness: 160 }}
-                                >
-                                    gauravlabs.dev@gmail.com
-                                </Text3DFlip>
+                                gauravlabs.dev@gmail.com
                             </a>
                         </span>
                     </div>

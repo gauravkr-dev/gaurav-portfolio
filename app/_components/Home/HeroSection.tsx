@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
-import TextFlipView from './text-flip-view'
 import GeneralInformationView from './general-information-view'
 import { getPortfolioStats } from '@/lib/get-portfolio-stats'
 import SocialLinks from './social-link'
+import TextFlipView from './text-flip-view'
 
 const HeroSection = async () => {
     const stats = await getPortfolioStats()
@@ -29,7 +29,7 @@ const HeroSection = async () => {
                     href="https://www.typescriptlang.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground hover:text-muted-foreground transition-colors"
+                    className="text-foreground transition-colors link"
                 >
                     TypeScript
                 </a>
@@ -38,7 +38,7 @@ const HeroSection = async () => {
                     href="https://react.dev/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground hover:text-muted-foreground transition-colors"
+                    className="text-foreground transition-colors link"
                 >
                     Next.js
                 </a>
@@ -47,7 +47,7 @@ const HeroSection = async () => {
                     href="https://nextjs.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground hover:text-muted-foreground transition-colors"
+                    className="text-foreground transition-colors link"
                 >
                     React
                 </a>
@@ -56,7 +56,7 @@ const HeroSection = async () => {
                     href="https://tailwindcss.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground hover:text-muted-foreground transition-colors"
+                    className="text-foreground transition-colors link"
                 >
                     Tailwind CSS
                 </a>
