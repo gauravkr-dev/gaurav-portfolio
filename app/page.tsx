@@ -31,11 +31,12 @@ const page = () => {
       />
       <Navbar />
       <HeroSection />
+      <SkillSection />
       {/* <ServiceSection />
       <AboutSection />
-      <EducationSection />
-      <SkillSection />
-      <ProjectSection />
+      <EducationSection /> */}
+
+      {/* <ProjectSection />
       <TestimonialsSection />
       <PricingSection />
       <CtaSection />

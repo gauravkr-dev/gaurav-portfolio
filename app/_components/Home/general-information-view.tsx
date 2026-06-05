@@ -149,7 +149,7 @@ const GeneralInformationView = () => {
                         <Button variant="outline" size="icon" className="rounded-lg">
                             <Mars />
                         </Button>
-                        <span className="text-muted-foreground">
+                        <span className="text-foreground">
                             he/him
                         </span>
                     </div>

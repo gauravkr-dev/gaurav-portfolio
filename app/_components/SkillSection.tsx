@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import React from 'react'
-import AnimatedContent from './AnimateVerticleContent'
 
 const skills = [
     // Languages 
@@ -44,79 +44,25 @@ const skills = [
 
 const SkillSection = () => {
     return (
-        <section id="skills" className='bg-[#F5F5F5] px-4 md:px-12 py-16'>
-            <div
-            >
-                <AnimatedContent
-                    distance={-100}
-                    direction="horizontal"
-                    reverse={false}
-                    duration={0.8}
-                    ease="power3.out"
-                    initialOpacity={0}
-                    animateOpacity
-                    scale={1}
-                    threshold={0.1}
-                    delay={0}
-                >
-                    <div className='text-[#FF9330] font-bold text-lg mb-6'>Skills</div>
-                </AnimatedContent>
-
-                <AnimatedContent
-                    distance={-100}
-                    direction="horizontal"
-                    reverse={false}
-                    duration={0.8}
-                    ease="power3.out"
-                    initialOpacity={0}
-                    animateOpacity
-                    scale={1}
-                    threshold={0.1}
-                    delay={0.1}
-                >
-                    <div
-                        className="relative flex items-center gap-4 ml-2"
-                    >
-                        <div className='absolute md:h-18 md:w-18 w-12 h-12 rounded-full bg-[#FFB646] -left-4 -top-2 z-0 pointer-events-none' />
-                        <h1 className="text-4xl md:text-6xl font-bold text-black-800 relative z-10">
-                            My Skills
-                        </h1>
-                    </div>
-                </AnimatedContent>
-
+        <section id="skills" className='mt-12 mb-12'>
+            <div style={{ fontFamily: "var(--font-geist-mono)" }}>
+                <p className="text-muted-foreground">Tech Stack</p>
             </div>
-
-            <div
-            >
-                <div
-                    className='grid grid-cols-1 gap-8 mt-12'
-                >
-                    <AnimatedContent
-                        distance={100}
-                        direction="vertical"
-                        reverse={false}
-                        duration={0.8}
-                        ease="power3.out"
-                        initialOpacity={0}
-                        animateOpacity
-                        scale={1}
-                        threshold={0.1}
-                        delay={0.3}
-                    >
-                        <div className=' w-full p-4 rounded-lg  gap-6 flex flex-col transition duration-300'>
-
-                            <div className='flex flex-wrap items-center gap-4'>
-                                {skills.map((skill) => (
-                                    <div key={`${skill.category}-${skill.slug}`} className='flex items-center gap-2 border border-[#FF9330] rounded-lg px-2 py-1'>
-                                        <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.slug}/${skill.slug}-original.svg`} alt={`${skill.name} icon`} className='w-5 h-5' />
-                                        <p className='text-gray-800 text-sm'>{skill.name}</p>
-                                    </div>
-                                ))}
+            <div className='flex flex-wrap items-center gap-4 mt-4'>
+                {skills.map((skill) => (
+                    <Tooltip key={`${skill.category}-${skill.slug}`} >
+                        <TooltipTrigger asChild>
+                            <div key={`${skill.category}-${skill.slug}`} className='flex items-center gap-2 border border-border rounded-lg p-2 group'>
+                                <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.slug}/${skill.slug}-original.svg`} alt={`${skill.name} icon`} className='w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 group-hover:scale-110 transition-transform duration-200' />
                             </div>
-                        </div>
-                    </AnimatedContent>
-                </div>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                            <p>{skill.name}</p>
+                        </TooltipContent>
+                    </Tooltip>
+                ))}
             </div>
+
         </section>
     )
 }

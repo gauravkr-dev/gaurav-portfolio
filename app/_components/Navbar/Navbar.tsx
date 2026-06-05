@@ -18,7 +18,9 @@ const Navbar = () => {
             <div className="flex items-center justify-between py-4 max-w-4xl mx-auto px-4">
                 <div className="flex items-center gap-4">
                     {/* <a href="#home" className="text-2xl font-bold mr-1 md:mr-6" aria-label="Gaurav Kumar">GK</a> */}
-                    <Image src="/gaurav_logo21.png" alt="Gaurav Kumar" width={38} height={38} className="rounded-full mr-4 md:mr-8 text-orange-500" />
+                    <a href="#home" className="text-2xl font-bold mr-1 md:mr-6" aria-label="Gaurav Kumar">
+                        <Image src="/gaurav_logo21.png" alt="Gaurav Kumar" width={38} height={38} className="rounded-full text-orange-500" />
+                    </a>
                     <a href="#projects" className="text-muted-foreground hover:text-foreground duration-200" aria-label="Gaurav Kumar">Projects</a>
                     <a href="#contact" className="text-muted-foreground hover:text-foreground duration-200" aria-label="Gaurav Kumar">Contact</a>
                     <a href="#services" className="text-muted-foreground hover:text-foreground duration-200" aria-label="Gaurav Kumar">Services</a>
