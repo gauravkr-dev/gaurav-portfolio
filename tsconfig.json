@@ -34,7 +34,9 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    "**/*.mts",
+    "app/_components/Navbar/CommandSearch.jsx",
+    "components/command-palette.jsx"
   ],
   "exclude": [
     "node_modules"

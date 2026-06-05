@@ -6,7 +6,7 @@ import AnimatedContent from './AnimateVerticleContent'
 
 const ServiceSection = () => {
     return (
-        <section id="services" className='bg-white px-4 md:px-12 py-16 mb-6'>
+        <section id="services" className='bg-white px-4 md:px-12 py-16 mb-6 mt-16'>
             <div
             >
                 <AnimatedContent

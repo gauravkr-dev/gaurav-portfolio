@@ -1,13 +1,26 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
 import "./globals.css";
 import Providers from "@/components/Providers";
-
-const syne = Syne({
+import { Syne } from "next/font/google";
+import { Caveat, Geist, Geist_Mono } from "next/font/google";
+// const syne = Syne({
+//   subsets: ["latin"],
+//   variable: "--font-syne",
+// });
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  variable: "--font-syne",
 });
 
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 export const metadata: Metadata = {
   title: "Gaurav - Full Stack Web Developer",
   description: "Welcome to my portfolio! I'm Gaurav, a passionate full stack web developer with expertise in Next.js, TypeScript, MERN. Explore my projects and skills to see how I can bring your ideas to life.",
@@ -24,15 +37,13 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${syne.className} ${syne.variable} h-full antialiased`}
+      className={`${geistSans.className} ${geistSans.variable} ${geistMono.variable} ${caveat.variable} h-full antialiased`}
     >
-      <Providers>
-        <body className="min-h-full flex flex-col">
-
+      <body className="min-h-full flex flex-col">
+        <Providers>
           {children}
-
-        </body>
-      </Providers>
+        </Providers>
+      </body>
     </html>
   );
 }
