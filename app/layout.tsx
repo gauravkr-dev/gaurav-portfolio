@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "@/components/Providers";
-import { Syne } from "next/font/google";
 import { Caveat, Geist, Geist_Mono } from "next/font/google";
-// const syne = Syne({
-//   subsets: ["latin"],
-//   variable: "--font-syne",
-// });
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,6 +23,8 @@ export const metadata: Metadata = {
     icon: "/gaurav_logo21.png",
   }
 };
+
+
 
 export default function RootLayout({
   children,

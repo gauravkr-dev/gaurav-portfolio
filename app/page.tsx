@@ -8,7 +8,7 @@ import EducationSection from './_components/EducationSection'
 import { TestimonialsSection } from './_components/TestimonialSection'
 import { PricingSection } from './_components/WorkingStyle'
 import ContactSection from './_components/ContactSection'
-import { Footer } from './_components/Footer'
+import Footer from './_components/Footer'
 import CtaSection from './_components/CtaSection'
 import Navbar from './_components/Navbar/Navbar'
 
@@ -40,8 +40,8 @@ const page = () => {
       <TestimonialsSection />
       <PricingSection />
       <CtaSection />
-      <ContactSection />
-      <Footer /> */}
+      <ContactSection /> */}
+      <Footer />
     </div>
   )
 }
