@@ -12,6 +12,7 @@ import Footer from './_components/Footer'
 import CtaSection from './_components/CtaSection'
 import Navbar from './_components/Navbar/Navbar'
 import ExperienceView from './_components/Experience/experience-view'
+import ProjectView from './_components/Projects/project-view'
 
 const page = () => {
   return (
@@ -34,6 +35,7 @@ const page = () => {
       <HeroSection />
       <SkillSection />
       <ExperienceView />
+      <ProjectView />
       {/* <ServiceSection />
       <AboutSection />
       <EducationSection /> */}
