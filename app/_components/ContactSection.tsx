@@ -88,7 +88,7 @@ const ContactSection = () => {
                 </a>
             </div>
             <div
-                className="flex items-center flex-col gap-4 w-full border border-border rounded-xl p-4 sm:p-8 mb-12"
+                className="flex items-center flex-col gap-4 w-full border border-border rounded-xl p-4 sm:p-8"
             >
                 <div className="w-full mt-4 mb-4">
                     <label htmlFor="name" className="block text-sm  mb-1">To</label>
