@@ -82,13 +82,13 @@ const ContactSection = () => {
                 <p className="text-muted-foreground" style={{ fontFamily: "var(--font-geist-mono)" }}>
                     Contact Me
                 </p>
-                <a href="https://cal.com/gaurav-kumar-dev/web-development-consultation" className="inline-flex items-center gap-2 text-sm text-primary rounded-lg border border-dashed hover:border-dotted px-4 py-2 transition-colors hover:bg-primary/10" target="_blank" rel="noopener noreferrer">
+                <a href="https://cal.com/gaurav-kumar-dev/web-development-consultation" className="mt-12 inline-flex items-center gap-2 text-sm text-primary rounded-lg border border-border px-4 py-2 transition-colors hover:bg-primary/10" target="_blank" rel="noopener noreferrer">
                     <CalendarDays className="size-4" />
                     Schedule a meeting
                 </a>
             </div>
             <div
-                className="flex items-center flex-col gap-4 w-full border border-dashed rounded-xl p-4 sm:p-8 mb-12"
+                className="flex items-center flex-col gap-4 w-full border border-border rounded-xl p-4 sm:p-8 mb-12"
             >
                 <div className="w-full mt-4 mb-4">
                     <label htmlFor="name" className="block text-sm  mb-1">To</label>

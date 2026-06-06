@@ -8,7 +8,7 @@ import TextFlipView from './text-flip-view'
 const HeroSection = async () => {
     const stats = await getPortfolioStats()
     return (
-        <section id="home">
+        <section>
             <div className="mt-28 flex items-center justify-start gap-3">
                 <Image src="/gaurav.jpeg" alt="Gaurav Kumar" width={64} height={64} className="rounded-lg border border-border" />
                 <div >

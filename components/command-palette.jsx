@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useCallback, createContext, useContext, useMemo, memo } from "react";
+import { createPortal } from 'react-dom';
 import { useIsMobile } from "../hooks/use-mobile";
 
 const commandPaletteStyles = `
@@ -235,7 +236,7 @@ export const CommandPalette = memo(function CommandPalette({
 
   let itemIndex = -1;
 
-  return (
+  const overlay = (
     <>
       <style>{commandPaletteStyles}</style>
 
@@ -376,6 +377,12 @@ export const CommandPalette = memo(function CommandPalette({
       </div>
     </>
   );
+
+  if (typeof document !== 'undefined') {
+    return createPortal(overlay, document.body);
+  }
+
+  return null;
 });
 
 const CommandItem = memo(function CommandItem({ item, index, isSelected, onSelect, onHover, isKeyboardNav, pointerPositionRef, setIsKeyboardNav }) {

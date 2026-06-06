@@ -183,6 +183,8 @@ export default function CommandSearchWrapper() {
 
 function CommandSearch() {
 
+    const [selected, setSelected] = useState(null);
+
     return (
         <div className="flex flex-col items-center justify-center w-full h-full px-4 gap-4 font-inter">
             <CommandPaletteSearchTrigger />
