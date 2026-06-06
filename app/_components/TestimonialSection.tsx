@@ -4,7 +4,6 @@ import React from 'react'
 import { cn } from "@/lib/utils";
 import { QuoteIcon } from "lucide-react";
 import { DecorIcon } from '@/components/ui/docker-icon';
-import AnimatedContent from './AnimateVerticleContent';
 
 type Testimonial = {
     quote: string;
@@ -21,12 +20,6 @@ const testimonials: Testimonial[] = [
     },
     {
         quote:
-            "Working with Gaurav was smooth and professional. He understood my requirements quickly and built a great solution.",
-        name: "Aman Verma",
-        role: "Small Business Owner"
-    },
-    {
-        quote:
             "Amazing experience! The design and performance of the project exceeded my expectations.",
         name: "Neha Gupta",
         role: "Product Manager"
@@ -35,69 +28,22 @@ const testimonials: Testimonial[] = [
 
 export function TestimonialsSection() {
     return (
-        <section id="testimonials" className='bg-[#F5F5F5] px-4 md:px-12 py-16'>
+        <section id="testimonials" className='mt-12'>
+            <p className="text-muted-foreground mb-8" style={{ fontFamily: "var(--font-geist-mono)" }}>
+                Testimonials
+            </p>
+
             <div
             >
-                <AnimatedContent
-                    distance={-100}
-                    direction="horizontal"
-                    reverse={false}
-                    duration={0.8}
-                    ease="power3.out"
-                    initialOpacity={0}
-                    animateOpacity
-                    scale={1}
-                    threshold={0.1}
-                    delay={0}
-                >
-                    <div className='text-[#FF9330] font-bold text-lg mb-6'>Testimonials</div>
-                </AnimatedContent>
-                <AnimatedContent
-                    distance={-100}
-                    direction="horizontal"
-                    reverse={false}
-                    duration={0.8}
-                    ease="power3.out"
-                    initialOpacity={0}
-                    animateOpacity
-                    scale={1}
-                    threshold={0.1}
-                    delay={0.1}
-                >
-                    <div
-                        className="relative flex items-center gap-4 ml-2"
-                    >
-                        <div className='absolute md:h-18 md:w-18 w-12 h-12 rounded-full bg-[#FFB646] -left-4 -top-2 z-0 pointer-events-none' />
-                        <h1 className="text-4xl md:text-6xl font-bold text-black-800 relative z-10">
-                            Client Feedback
-                        </h1>
-                    </div>
-                </AnimatedContent>
-            </div>
-            <div
-            >
-                <AnimatedContent
-                    distance={100}
-                    direction="vertical"
-                    reverse={false}
-                    duration={0.8}
-                    ease="power3.out"
-                    initialOpacity={0}
-                    animateOpacity
-                    scale={1}
-                    threshold={0.1}
-                    delay={0.3}
-                >
-                    <div className="mx-auto mt-12 grid w-full max-w-5xl gap-8 md:grid-cols-3 md:gap-6" >
-                        {testimonials.map((testimonial, index) => (
-                            <TestimonialCard
-                                index={index}
-                                key={testimonial.name}
-                                testimonial={testimonial}
-                            />
-                        ))}
-                    </div>
-                </AnimatedContent>
+                <div className="mx-auto mt-12 grid w-full max-w-5xl md:grid-cols-2 md:gap-6" >
+                    {testimonials.map((testimonial, index) => (
+                        <TestimonialCard
+                            index={index}
+                            key={testimonial.name}
+                            testimonial={testimonial}
+                        />
+                    ))}
+                </div>
             </div>
 
         </section>
@@ -119,7 +65,7 @@ function TestimonialCard({
     return (
         <figure
             className={cn(
-                "relative flex flex-col  gap-4 px-8 pt-8 pb-4 mb-18 bg-gray-50 shadow-xs md:translate-y-[calc(3rem*var(--t-card-index))]",
+                "relative flex flex-col  gap-4 px-8 pt-8 pb-4 mb-18 md:translate-y-[calc(3rem*var(--t-card-index))]",
                 className
             )}
             style={

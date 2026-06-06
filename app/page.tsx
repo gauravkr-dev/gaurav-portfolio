@@ -36,12 +36,13 @@ const page = () => {
       <SkillSection />
       <ExperienceView />
       <ProjectView />
+      <TestimonialsSection />
       {/* <ServiceSection />
       <AboutSection />
       <EducationSection /> */}
 
       {/* <ProjectSection />
-      <TestimonialsSection />
+
       <PricingSection />
       <CtaSection />
       <ContactSection /> */}
