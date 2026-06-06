@@ -1,4 +1,14 @@
-export const ProjectsData = [
+type ProjectDataType = {
+    id: string;
+    name: string;
+    description: string;
+    technologies: string[];
+    link: string;
+    githubLink?: string;
+    image: string;
+}
+
+export const ProjectsData: ProjectDataType[] = [
     {
         id: "bebetter",
         name: "BeBetter.ai",
@@ -27,3 +37,5 @@ export const ProjectsData = [
         image: "/NexFlow2.png",
     }
 ]
+
+

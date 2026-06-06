@@ -1,21 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import React from 'react'
-import { ProjectsData } from './project-data'
 import { Button } from '@/components/ui/button'
-import { Link as WebsiteLink } from 'lucide-react'
+import { Link } from 'lucide-react'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
-import Link from 'next/link';
+import { ProjectsData } from '@/app/_components/Projects/project-data'
 
-const ProjectView = () => {
+const ProjectsView = () => {
     return (
-        <div className="mt-12">
+        <div className="mt-24">
             <p className="text-muted-foreground mb-8" style={{ fontFamily: "var(--font-geist-mono)" }}>
-                Projects
+                All Projects
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {(ProjectsData.slice(0, 2)).map((project) => (
+                {ProjectsData.map((project) => (
                     <div key={project.id} className="flex flex-col">
                         <img src={project.image} alt={project.name} className="w-full h-auto mb-4 rounded-lg border border-border" />
                         <div className="flex items-center justify-between mb-2">
@@ -26,7 +25,7 @@ const ProjectView = () => {
                                 <Tooltip>
                                     <TooltipTrigger>
                                         <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-foreground">
-                                            <WebsiteLink className="size-5" />
+                                            <Link className="size-5" />
                                         </a>
                                     </TooltipTrigger>
                                     <TooltipContent>
@@ -65,16 +64,8 @@ const ProjectView = () => {
                     </div>
                 ))}
             </div>
-
-            <div className="mt-12 flex justify-center">
-                <Link href="/projects" className="text-center">
-                    <Button variant="outline" size="lg" className="cursor-pointer">
-                        View All Projects
-                    </Button>
-                </Link>
-            </div>
         </div>
     )
 }
 
-export default ProjectView
+export default ProjectsView

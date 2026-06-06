@@ -31,7 +31,6 @@ const page = () => {
         aria-hidden="true"
         role="presentation"
       />
-      <Navbar />
       <HeroSection />
       <SkillSection />
       <ExperienceView />
@@ -46,7 +45,7 @@ const page = () => {
       <PricingSection />
       <CtaSection /> */}
       <ContactSection />
-      <Footer />
+
     </div>
   )
 }

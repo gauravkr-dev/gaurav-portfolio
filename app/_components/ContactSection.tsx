@@ -1,5 +1,5 @@
 "use client"
-import { Send } from 'lucide-react'
+import { CalendarDays, Send } from 'lucide-react'
 import React, { useState } from 'react'
 import emailjs from "@emailjs/browser";
 import { toast } from 'sonner';
@@ -78,9 +78,15 @@ const ContactSection = () => {
 
     return (
         <section id="contact" className='mt-12'>
-            <p className=" mb-8 text-muted-foreground" style={{ fontFamily: "var(--font-geist-mono)" }}>
-                Contact Me
-            </p>
+            <div className="flex items-center justify-between mb-8">
+                <p className="text-muted-foreground" style={{ fontFamily: "var(--font-geist-mono)" }}>
+                    Contact Me
+                </p>
+                <a href="https://cal.com/gaurav-kumar-dev/web-development-consultation" className="inline-flex items-center gap-2 text-sm text-primary rounded-lg border border-dashed hover:border-dotted px-4 py-2 transition-colors hover:bg-primary/10" target="_blank" rel="noopener noreferrer">
+                    <CalendarDays className="size-4" />
+                    Schedule a meeting
+                </a>
+            </div>
             <div
                 className="flex items-center flex-col gap-4 w-full border border-dashed rounded-xl p-4 sm:p-8 mb-12"
             >
@@ -117,7 +123,7 @@ const ContactSection = () => {
                         <Button disabled={isSubmitting}
                             type="submit"
                             variant="outline"
-                            className="cursor-pointer flex items-center justify-center rounded-lg gap-2 py-5 px-5">
+                            className="cursor-pointer flex items-center justify-center rounded-lg gap-2 py-5 px-6">
                             {isSubmitting ? <span className="flex items-center flex-row justify-center gap-1"><Spinner /> Sending...</span> : <span className="flex items-center flex-row justify-center gap-1"><Send size={16} /> Send</span>}
                         </Button>
                     </div>
