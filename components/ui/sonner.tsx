@@ -21,17 +21,15 @@ const Toaster = ({ ...props }: ToasterProps) => {
       }}
       style={
         {
-          "--normal-bg": "#FFB646",
-          "--normal-text": "#000000",
-          "--normal-border": "#000000",
-          "--border-radius": "0.75rem",
-          "--font-syne": "var(--font-syne)",
-          fontFamily: "var(--font-syne)",
+          "--normal-bg": "var(--popover)",
+          "--normal-text": "var(--popover-foreground)",
+          "--normal-border": "var(--border)",
+          "--border-radius": "var(--radius)",
         } as React.CSSProperties
       }
       toastOptions={{
         classNames: {
-          toast: "border border-black rounded-xl", // use --font-syne via inline style
+          toast: "cn-toast",
         },
       }}
       {...props}
@@ -40,3 +38,4 @@ const Toaster = ({ ...props }: ToasterProps) => {
 }
 
 export { Toaster }
+

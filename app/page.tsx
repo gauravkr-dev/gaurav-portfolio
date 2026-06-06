@@ -44,8 +44,8 @@ const page = () => {
       {/* <ProjectSection />
 
       <PricingSection />
-      <CtaSection />
-      <ContactSection /> */}
+      <CtaSection /> */}
+      <ContactSection />
       <Footer />
     </div>
   )
