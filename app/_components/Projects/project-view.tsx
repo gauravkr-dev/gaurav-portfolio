@@ -3,7 +3,7 @@
 import React from 'react'
 import { ProjectsData } from './project-data'
 import { Button } from '@/components/ui/button'
-import { Link as WebsiteLink } from 'lucide-react'
+import { GalleryVerticalEnd, Link as WebsiteLink } from 'lucide-react'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import Link from 'next/link';
 
@@ -69,6 +69,7 @@ const ProjectView = () => {
             <div className="mt-12 flex justify-center">
                 <Link href="/projects" className="text-center">
                     <Button variant="outline" size="lg" className="cursor-pointer">
+                        <GalleryVerticalEnd />
                         View All Projects
                     </Button>
                 </Link>

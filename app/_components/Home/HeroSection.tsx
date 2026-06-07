@@ -29,7 +29,7 @@ const HeroSection = async () => {
                     href="https://www.typescriptlang.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground transition-colors link"
+                    className="text-primary link-underline"
                 >
                     TypeScript
                 </a>
@@ -38,7 +38,7 @@ const HeroSection = async () => {
                     href="https://react.dev/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground transition-colors link"
+                    className="text-primary link-underline"
                 >
                     Next.js
                 </a>
@@ -47,7 +47,7 @@ const HeroSection = async () => {
                     href="https://nextjs.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground transition-colors link"
+                    className="text-primary link-underline"
                 >
                     React
                 </a>
@@ -56,7 +56,7 @@ const HeroSection = async () => {
                     href="https://tailwindcss.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground transition-colors link"
+                    className="text-primary link-underline"
                 >
                     Tailwind CSS
                 </a>

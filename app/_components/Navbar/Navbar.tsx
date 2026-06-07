@@ -23,7 +23,7 @@ const Navbar = () => {
                     </Link>
                     <Link href="/projects" className="text-muted-foreground hover:text-foreground duration-200" aria-label="Gaurav Kumar">Projects</Link>
                     <Link href="/#contact" className="text-muted-foreground hover:text-foreground duration-200" aria-label="Gaurav Kumar">Contact</Link>
-                    <Link href="/services" className="text-muted-foreground hover:text-foreground duration-200" aria-label="Gaurav Kumar">Services</Link>
+                    <Link href="/blogs" className="text-muted-foreground hover:text-foreground duration-200" aria-label="Gaurav Kumar">Blogs</Link>
                 </div>
                 <div className="flex items-center">
                     <div>

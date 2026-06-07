@@ -7,6 +7,8 @@ import { Spinner } from '@/components/ui/spinner';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { DecorIcon } from '@/components/ui/docker-icon';
+import { cn } from '@/lib/utils';
 
 const ContactSection = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -78,15 +80,38 @@ const ContactSection = () => {
 
     return (
         <section id="contact" className='mt-12'>
-            <div className="flex items-center justify-between mb-8">
-                <p className="text-muted-foreground" style={{ fontFamily: "var(--font-geist-mono)" }}>
-                    Contact Me
-                </p>
-                <a href="https://cal.com/gaurav-kumar-dev/web-development-consultation" className="mt-12 inline-flex items-center gap-2 text-sm text-primary rounded-lg border border-border px-4 py-2 transition-colors hover:bg-primary/10" target="_blank" rel="noopener noreferrer">
-                    <CalendarDays className="size-4" />
-                    Schedule a meeting
-                </a>
+            <div className="flex items-center flex-col mb-4">
+                <div className="flex flex-col gap-4">
+                    <p className="text-muted-foreground" style={{ fontFamily: "var(--font-geist-mono)" }}>
+                        Let&apos;s work together
+                    </p>
+                    <p className="text-muted-foreground">
+                        Choose your preferred method to <span className="text-primary link-underline">get in touch</span>, Whether you <span className="text-primary link-underline">have a question</span>, want to <span className="text-primary link-underline">discuss a project</span>, or just want to <span className="text-primary link-underline">say hello</span>!
+                    </p>
+                </div>
+                <figure
+                    className={cn(
+                        "relative flex flex-col  gap-4 px-8 sm:px-24 mt-12 pt-4 pb-4 mb-12 md:translate-y-[calc(3rem*var(--t-card-index))]",
+                    )}
+
+                >
+                    <div className="absolute -inset-y-4 -left-px w-px bg-border" />
+                    <div className="absolute -inset-y-4 -right-px w-px bg-border" />
+                    <div className="absolute -inset-x-4 -top-px h-px bg-border" />
+                    <div className="absolute -right-4 -bottom-px -left-4 h-px bg-border" />
+                    <DecorIcon className="size-3.5" position="top-left" />
+                    <DecorIcon className="size-3.5" position="bottom-right" />
+                    <a href="https://cal.com/gaurav-kumar-dev/web-development-consultation" className="inline-flex items-center  gap-2 text-sm text-primary rounded-lg border border-border px-4 py-2 transition-colors hover:bg-primary/10" target="_blank" rel="noopener noreferrer">
+                        <CalendarDays className="size-4" />
+                        Schedule a meeting
+                    </a>
+
+                </figure>
+
             </div>
+            <p className="text-muted-foreground mb-4">
+                Prefer to write? Fill out the form and I&apos;ll get back to you within 24 hours.
+            </p>
             <div
                 className="flex items-center flex-col gap-4 w-full border border-border rounded-xl p-4 sm:p-8"
             >
