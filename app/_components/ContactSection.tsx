@@ -142,7 +142,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                         <label htmlFor="message" className={`block text-sm ${errors.message ? "text-red-500" : ""}`} >Your Message*</label>
-                        <Textarea placeholder="Describe your project, ask something or just say hello!" value={message} onChange={(e) => { setMessage(e.target.value); setErrors(prev => ({ ...prev, message: "" })); }} id="message" name="message" className="w-full mt-1 p-4 resize-none h-48" required />
+                        <Textarea placeholder="Describe your project, ask something or just say hello!" value={message} onChange={(e) => { setMessage(e.target.value); setErrors(prev => ({ ...prev, message: "" })); }} id="message" name="message" className="w-full mt-1 p-4 resize-none min-h-32 max-h-64" required />
                     </div>
                     <div className="flex justify-end">
                         <Button disabled={isSubmitting}
