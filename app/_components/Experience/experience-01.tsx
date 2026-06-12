@@ -25,7 +25,7 @@ const EXPERIENCE: ExperienceItemType[] = [
     id: "syncinfo",
     companyName: "SyncInfo",
     companyLogo: "/favicon.png",
-    companyWebsite: "https://syncinfo.com",
+    companyWebsite: "http://localhost:3000",
     positions: [
       {
         id: "2",
@@ -35,14 +35,14 @@ const EXPERIENCE: ExperienceItemType[] = [
         },
         employmentType: "Part-time",
         icon: <CodeXmlIcon />,
-        description: `- Integrated VNPAY-QR for secure transactions.
-- Registered the e-commerce site with [online.gov.vn](https://online.gov.vn) for compliance.
-- Developed online ordering to streamline purchases.
-- Build and maintain ZaDark.com with Docusaurus, integrating AdSense.
-- Develop and maintain the ZaDark extension for Zalo Web on Chrome, Safari, Edge, and Firefox — with 15,000+ active users via Chrome Web Store.`,
+        description: `- Built and deployed a production-grade embeddable AI chatbot widget SDK served via CDN.
+- Implemented a full RAG pipeline with concurrent crawling, domain filtering, and zero-downtime re-crawls powered by Firecrawl.
+- Optimized widget bundle size by ~72% by migrating from React to Preact.
+- Architected the full stack using Next.js, tRPC, Drizzle ORM, Neon PostgreSQL, and Inngest.
+- Integrated pgvector for semantic similarity search with cosine similarity thresholds.
+- Designed and implemented streaming AI responses for real-time chat experience.`,
         skills: [
           "Next.js",
-          "Strapi",
           "Better Auth",
           "TypeScript",
           "Docker",
@@ -52,6 +52,7 @@ const EXPERIENCE: ExperienceItemType[] = [
           "Tailwind CSS",
           "Node.js",
           "Project Management",
+          "Preact", "pgvector", "Neon", "Inngest", "Drizzle ORM", "Vercel"
         ],
       },
       {
@@ -62,6 +63,8 @@ const EXPERIENCE: ExperienceItemType[] = [
         },
         employmentType: "Part-time",
         icon: <LightbulbIcon />,
+        description: `- Founded SyncInfo, a B2B SaaS platform enabling businesses to embed AI-powered chat assistants into any website via a single script tag.
+- Sole decision-maker across product, engineering, design, and go-to-market strategy.`,
         skills: ["Business Ownership", "Business Law", "Business Tax"],
       },
     ],
@@ -71,7 +74,7 @@ const EXPERIENCE: ExperienceItemType[] = [
     id: "freelance",
     companyName: "Freelance",
     companyLogo: "/gaurav.jpeg",
-    companyWebsite: "https://shadcncraft.com?atp=ncdai",
+    companyWebsite: "https://gauravkr-dev.vercel.app",
     positions: [
       {
         id: "1",

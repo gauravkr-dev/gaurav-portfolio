@@ -5,12 +5,16 @@ import FooterQuotsView from './footer-quots-view'
 const socialLinksData = [
     {
         name: "X",
-        url: "https://x.com/gauravkr_dev",
+        url: "https://x.com/gauravkr474",
     },
     {
         name: "GitHub",
         url: "https://github.com/gauravkr-dev",
     },
+    {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/gauravkr-dev/",
+    }
 ]
 
 const FooterView = () => {

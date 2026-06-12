@@ -44,7 +44,7 @@ const skills = [
 
 const SkillSection = () => {
     return (
-        <section id="skills" className='mt-12 mb-12'>
+        <section id="skills" className='mt-10 mb-12'>
             <div style={{ fontFamily: "var(--font-geist-mono)" }}>
                 <p className="text-muted-foreground">Tech Stack</p>
             </div>

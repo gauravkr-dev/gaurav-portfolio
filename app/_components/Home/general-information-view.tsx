@@ -5,7 +5,7 @@ import { CurrentLocalTimeItem } from './current-local-time-item'
 
 const GeneralInformationView = () => {
     return (
-        <div className="mt-8 flex items-start justify-center  gap-2 flex-col text-sm"
+        <div className="mt-10 flex items-start justify-center  gap-2 flex-col text-sm"
             style={{ fontFamily: "var(--font-geist-mono)" }}>
             <div className="flex items-center gap-4">
                 <Button variant="outline" size="icon" className="rounded-lg">
@@ -14,7 +14,7 @@ const GeneralInformationView = () => {
                 <span className="text-muted-foreground">
                     Founder of{" "}
                     <a
-                        href="https://www.helloworld.com/"
+                        href="http://localhost:3000"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="transition-colors mx-1 text-foreground link"

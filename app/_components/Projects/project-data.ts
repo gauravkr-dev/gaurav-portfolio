@@ -14,8 +14,8 @@ export const ProjectsData: ProjectDataType[] = [
         name: "BeBetter.ai",
         description: "BeBetter is a health and wellness platform designed to help users achieve their fitness goals through personalized workout plans and nutrition guidance.",
         technologies: ["Next.js", "Strapi", "Better Auth", "TypeScript", "Docker", "tRPC", "Google Cloud", "React", "Tailwind CSS", "Node.js"],
-        link: "https://bebetter.com",
-        githubLink: "https://github.com/bebetter",
+        link: "https://be-better-ai.vercel.app",
+        githubLink: "https://github.com/gauravkr-dev/BeBetter.ai",
         image: "/BeBetter1.png",
     },
     {
@@ -23,8 +23,8 @@ export const ProjectsData: ProjectDataType[] = [
         name: "GroundUp Pulse",
         description: "GroundUp Pulse is a social impact platform that connects volunteers with local community initiatives. It enables users to discover meaningful opportunities to give back",
         technologies: ["Next.js", "Strapi", "Better Auth", "TypeScript", "Docker", "tRPC", "Google Cloud", "React", "Tailwind CSS", "Node.js"],
-        link: "https://grounduppulse.com",
-        githubLink: "https://github.com/grounduppulse",
+        link: "https://groundup-pulse.vercel.app",
+        githubLink: "https://github.com/gauravkr-dev/GroundUp-Pulse",
         image: "/GroundUp.png",
     },
     {
@@ -32,8 +32,8 @@ export const ProjectsData: ProjectDataType[] = [
         name: "NexFlow",
         description: "NexFlow is a workflow automation platform that streamlines business processes and enhances productivity. It allows users to create, manage, and optimize workflows with an intuitive drag-and-drop interface.",
         technologies: ["Next.js", "Strapi", "Better Auth", "TypeScript", "Docker", "tRPC", "Google Cloud", "React", "Tailwind CSS", "Node.js"],
-        link: "https://nexflow.com",
-        githubLink: "https://github.com/nexflow",
+        link: "https://nex-flow-five.vercel.app",
+        githubLink: "https://github.com/gauravkr-dev/NexFlow",
         image: "/NexFlow2.png",
     }
 ]
