@@ -17,7 +17,7 @@ const FooterView = () => {
     return (
         <>
             <FooterQuotsView />
-            <div className="border-t border-border mb-18 pt-6 flex items-center justify-between mx-auto w-full max-w-4xl px-4">
+            <div className="border-t border-border mb-18 pt-6   flex items-center justify-between mx-auto w-full max-w-4xl px-4">
                 <div className="flex-1">
                     <p className="text-sm text-muted-foreground">
                         &copy; {new Date().getFullYear()} Gaurav. All rights reserved.
