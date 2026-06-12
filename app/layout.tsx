@@ -5,6 +5,7 @@ import { Caveat, Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./_components/Navbar/Navbar";
 import FooterView from "./_components/footer/footer-view";
 import Background from "@/components/background";
+import Script from "next/script";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -46,6 +47,20 @@ export default function RootLayout({
           {children}
           <FooterView />
         </Providers>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+          `}
+        </Script>
       </body>
     </html>
   );
