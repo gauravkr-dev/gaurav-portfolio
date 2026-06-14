@@ -12,8 +12,8 @@ export const ProjectsData: ProjectDataType[] = [
     {
         id: "bebetter",
         name: "BeBetter.ai",
-        description: "BeBetter is a health and wellness platform designed to help users achieve their fitness goals through personalized workout plans and nutrition guidance.",
-        technologies: ["Next.js", "Strapi", "Better Auth", "TypeScript", "Docker", "tRPC", "Google Cloud", "React", "Tailwind CSS", "Node.js"],
+        description: "BeBetter.ai is an AI-powered career platform that offers AI mock interviews, resume analysis, mock tests, personalized feedback, and job listings to help users prepare for and secure better career opportunities.",
+        technologies: ["Next.js", "Better Auth", "TypeScript", "tRPC", "React", "Tailwind CSS", "Node.js", "Gemini API", "Uploadthing", "Drizzle ORM", "Polar", "ImageKit", "Inngest", "vercel"],
         link: "https://be-better-ai.vercel.app",
         githubLink: "https://github.com/gauravkr-dev/BeBetter.ai",
         image: "/BeBetter1.png",
@@ -21,8 +21,8 @@ export const ProjectsData: ProjectDataType[] = [
     {
         id: "groundup_pulse",
         name: "GroundUp Pulse",
-        description: "GroundUp Pulse is a social impact platform that connects volunteers with local community initiatives. It enables users to discover meaningful opportunities to give back",
-        technologies: ["Next.js", "Strapi", "Better Auth", "TypeScript", "Docker", "tRPC", "Google Cloud", "React", "Tailwind CSS", "Node.js"],
+        description: "GroundUp Pulse is an AI-powered civic issue reporting platform that enables citizens to report local problems, automatically verifies reports, prioritizes issues, and connects them with the appropriate authorities for faster resolution.",
+        technologies: ["Next.js", "Better Auth", "TypeScript", "Docker", "tRPC", "React", "Tailwind CSS", "Node.js", "Gemini API", "Uploadthing", "Drizzle ORM", "Socket.IO", "vercel"],
         link: "https://groundup-pulse.vercel.app",
         githubLink: "https://github.com/gauravkr-dev/GroundUp-Pulse",
         image: "/GroundUp.png",
@@ -30,8 +30,8 @@ export const ProjectsData: ProjectDataType[] = [
     {
         id: "nexflow",
         name: "NexFlow",
-        description: "NexFlow is a workflow automation platform that streamlines business processes and enhances productivity. It allows users to create, manage, and optimize workflows with an intuitive drag-and-drop interface.",
-        technologies: ["Next.js", "Strapi", "Better Auth", "TypeScript", "Docker", "tRPC", "Google Cloud", "React", "Tailwind CSS", "Node.js"],
+        description: "NexFlow is an AI-powered real-time collaboration platform that enables teams to communicate, collaborate, and stay productive through secure messaging, intelligent workflows, and smart AI assistance.",
+        technologies: ["Next.js", "Kinde Auth", "TypeScript", "tRPC", "React", "Tailwind CSS", "Node.js", "Prisma ORM", "Uploadthing", "Cloudflare workers", "vercel"],
         link: "https://nex-flow-five.vercel.app",
         githubLink: "https://github.com/gauravkr-dev/NexFlow",
         image: "/NexFlow2.png",
