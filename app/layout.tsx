@@ -7,6 +7,7 @@ import FooterView from "./_components/footer/footer-view";
 import Background from "@/components/background";
 import Script from "next/script";
 import NextTopLoader from "nextjs-toploader";
+import { Skiper89 } from "@/components/skipper";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -50,6 +51,7 @@ export default function RootLayout({
           />
           <Background />
           <Navbar />
+          <Skiper89 />
           {children}
           <FooterView />
         </Providers>
