@@ -6,7 +6,7 @@ import { Link001 } from '@/components/linkAnimation'
 
 const GeneralInformationView = () => {
     return (
-        <div className="mt-10 flex items-start justify-center  gap-2 flex-col text-sm"
+        <div className="mt-8 flex items-start justify-center  gap-2 flex-col text-sm"
             style={{ fontFamily: "var(--font-geist-mono)" }}>
             <div className="flex items-center gap-4">
                 <Button variant="outline" size="icon" className="rounded-lg bg-transparent border border-neutral-400/60">

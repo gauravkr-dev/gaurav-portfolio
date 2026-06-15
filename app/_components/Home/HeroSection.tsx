@@ -3,6 +3,7 @@ import React from 'react'
 import GeneralInformationView from './general-information-view'
 import { getPortfolioStats } from '@/lib/get-portfolio-stats'
 import TextFlipView from './text-flip-view'
+import SocialLinks from './social-link'
 
 const HeroSection = async () => {
     const stats = await getPortfolioStats()
@@ -63,7 +64,7 @@ const HeroSection = async () => {
             </p>
 
             <GeneralInformationView />
-            <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                 {
                     stats.map((stat) => (
                         <div key={stat.label} className="flex flex-col items-start border border-neutral-400/60 dark:border-border rounded-lg p-4 gap-1">
@@ -95,7 +96,7 @@ const HeroSection = async () => {
                     ))
                 }
             </div>
-
+            <SocialLinks />
         </section>
     )
 }
