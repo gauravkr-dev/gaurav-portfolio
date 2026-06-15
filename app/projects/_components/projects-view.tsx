@@ -54,7 +54,7 @@ const ProjectsView = () => {
                             {project.technologies.map((tech) => (
                                 <span
                                     key={tech}
-                                    className="inline-flex not-prose items-center rounded-md border bg-muted/50 px-1.5 py-0.5 font-mono text-xs text-muted-foreground"
+                                    className="inline-flex not-prose items-center rounded-md border border-neutral-400/60 dark:border-border px-1.5 py-0.5 font-mono text-xs text-muted-foreground"
                                 >
                                     {tech}
                                 </span>

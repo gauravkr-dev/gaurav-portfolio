@@ -87,7 +87,7 @@ export function CurrentLocalTimeItem({ timeZone }: CurrentLocalTimeItemProps) {
     if (!timeString) {
         return (
             <IntroItem>
-                <Button variant="outline" size="icon" className="rounded-lg">
+                <Button variant="outline" size="icon" className="rounded-lg bg-transparent border border-neutral-400/60">
                     <Clock12Icon />
                 </Button>
 
@@ -98,7 +98,7 @@ export function CurrentLocalTimeItem({ timeZone }: CurrentLocalTimeItemProps) {
 
     return (
         <IntroItem>
-            <Button variant="outline" size="icon" className="rounded-lg">
+            <Button variant="outline" size="icon" className="rounded-lg bg-transparent border border-neutral-400/60">
                 <ClockIcon className="size-4" />
             </Button>
 

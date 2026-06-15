@@ -56,7 +56,7 @@ const ProjectView = () => {
                             {project.technologies.map((tech) => (
                                 <span
                                     key={tech}
-                                    className="inline-flex not-prose items-center rounded-md border bg-muted/50 px-1.5 py-0.5 font-mono text-xs text-muted-foreground"
+                                    className="inline-flex not-prose items-center rounded-md border border-neutral-400/60 dark:border-border px-1.5 py-0.5 font-mono text-xs text-muted-foreground"
                                 >
                                     {tech}
                                 </span>
@@ -69,7 +69,7 @@ const ProjectView = () => {
 
             <div className="mt-12 flex justify-center">
                 <Link href="/projects" className="text-center">
-                    <Button variant="outline" size="lg" className="cursor-pointer">
+                    <Button variant="outline" size="lg" className="cursor-pointer rounded-lg bg-transparent border border-neutral-400/60">
                         <GalleryVerticalEnd />
                         View All Projects
                     </Button>

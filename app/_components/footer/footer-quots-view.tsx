@@ -51,10 +51,10 @@ function QuotsCard({
             }
             {...props}
         >
-            <div className="absolute -inset-y-4 -left-px w-px bg-border" />
-            <div className="absolute -inset-y-4 -right-px w-px bg-border" />
-            <div className="absolute -inset-x-4 -top-px h-px bg-border" />
-            <div className="absolute -right-4 -bottom-px -left-4 h-px bg-border" />
+            <div className="absolute -inset-y-4 -left-px w-px dark:bg-border bg-neutral-400/60" />
+            <div className="absolute -inset-y-4 -right-px w-px dark:bg-border bg-neutral-400/60" />
+            <div className="absolute -inset-x-4 -top-px h-px dark:bg-border bg-neutral-400/60" />
+            <div className="absolute -right-4 -bottom-px -left-4 h-px dark:bg-border bg-neutral-400/60" />
             <DecorIcon className="size-3.5" position="top-left" />
 
             <blockquote className="flex gap-4">

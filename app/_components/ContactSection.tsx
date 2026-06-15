@@ -95,13 +95,13 @@ const ContactSection = () => {
                     )}
 
                 >
-                    <div className="absolute -inset-y-4 -left-px w-px bg-border" />
-                    <div className="absolute -inset-y-4 -right-px w-px bg-border" />
-                    <div className="absolute -inset-x-4 -top-px h-px bg-border" />
-                    <div className="absolute -right-4 -bottom-px -left-4 h-px bg-border" />
+                    <div className="absolute -inset-y-4 -left-px w-px dark:bg-border bg-neutral-400/60" />
+                    <div className="absolute -inset-y-4 -right-px w-px dark:bg-border bg-neutral-400/60" />
+                    <div className="absolute -inset-x-4 -top-px h-px dark:bg-border bg-neutral-400/60" />
+                    <div className="absolute -right-4 -bottom-px -left-4 h-px dark:bg-border bg-neutral-400/60" />
                     <DecorIcon className="size-3.5" position="top-left" />
                     <DecorIcon className="size-3.5" position="bottom-right" />
-                    <a href="https://cal.com/gaurav-kumar-dev/web-development-consultation" className="inline-flex items-center  gap-2 text-sm text-primary rounded-lg border border-border px-4 py-2 transition-colors hover:bg-primary/10" target="_blank" rel="noopener noreferrer">
+                    <a href="https://cal.com/gaurav-kumar-dev/web-development-consultation" className="inline-flex items-center  gap-2 text-sm text-primary rounded-lg border border-neutral-400/60 dark:border-border px-4 py-2 transition-colors hover:bg-primary/10" target="_blank" rel="noopener noreferrer">
                         <CalendarDays className="size-4" />
                         Schedule a meeting
                     </a>
@@ -113,7 +113,7 @@ const ContactSection = () => {
                 Prefer to write? Fill out the form and I&apos;ll get back to you within 24 hours.
             </p>
             <div
-                className="flex items-center flex-col gap-4 w-full border border-border rounded-xl p-4 sm:p-8"
+                className="flex items-center flex-col gap-4 w-full border border-neutral-400/60 dark:border-border rounded-xl p-4 sm:p-8"
             >
                 <div className="w-full mt-4 mb-4">
                     <label htmlFor="name" className="block text-sm  mb-1">To</label>
@@ -148,7 +148,7 @@ const ContactSection = () => {
                         <Button disabled={isSubmitting}
                             type="submit"
                             variant="outline"
-                            className="cursor-pointer flex items-center justify-center rounded-lg gap-2 py-5 px-6">
+                            className="cursor-pointer flex items-center justify-center rounded-lg gap-2 py-5 px-6 bg-transparent border border-neutral-400/60">
                             {isSubmitting ? <span className="flex items-center flex-row justify-center gap-1"><Spinner /> Sending...</span> : <span className="flex items-center flex-row justify-center gap-1"><Send size={16} /> Send</span>}
                         </Button>
                     </div>

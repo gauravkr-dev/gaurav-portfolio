@@ -9,7 +9,7 @@ const GeneralInformationView = () => {
         <div className="mt-10 flex items-start justify-center  gap-2 flex-col text-sm"
             style={{ fontFamily: "var(--font-geist-mono)" }}>
             <div className="flex items-center gap-4">
-                <Button variant="outline" size="icon" className="rounded-lg">
+                <Button variant="outline" size="icon" className="rounded-lg bg-transparent border border-neutral-400/60">
                     <Lightbulb />
                 </Button>
                 <span className="text-muted-foreground flex items-center gap-2">
@@ -25,7 +25,7 @@ const GeneralInformationView = () => {
             <div className="flex items-start justify-center gap-2 sm:gap-4 flex-col sm:flex-row">
                 <div className="flex items-start justify-center gap-2 flex-col">
                     <div className="flex items-center gap-4">
-                        <Button variant="outline" size="icon" className="rounded-lg">
+                        <Button variant="outline" size="icon" className="rounded-lg bg-transparent border border-neutral-400/60">
                             <MapPin />
                         </Button>
                         <span className="text-muted-foreground">
@@ -38,7 +38,7 @@ const GeneralInformationView = () => {
                         </span>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Button variant="outline" size="icon" className="rounded-lg">
+                        <Button variant="outline" size="icon" className="rounded-lg bg-transparent border border-neutral-400/60">
                             <Phone />
                         </Button>
                         <span className="text-muted-foreground">
@@ -51,7 +51,7 @@ const GeneralInformationView = () => {
                         </span>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Button variant="outline" size="icon" className="rounded-lg">
+                        <Button variant="outline" size="icon" className="rounded-lg bg-transparent border border-neutral-400/60">
                             <Link />
                         </Button>
                         <span className="text-muted-foreground">
@@ -68,7 +68,7 @@ const GeneralInformationView = () => {
                         </span>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Button variant="outline" size="icon" className="rounded-lg">
+                        <Button variant="outline" size="icon" className="rounded-lg bg-transparent border border-neutral-400/60">
                             <Mail />
                         </Button>
                         <span className="text-muted-foreground">
@@ -81,7 +81,7 @@ const GeneralInformationView = () => {
                         </span>
                     </div>
                     <div className="flex items-center gap-4">
-                        <Button variant="outline" size="icon" className="rounded-lg">
+                        <Button variant="outline" size="icon" className="rounded-lg bg-transparent border border-neutral-400/60">
                             <Mars />
                         </Button>
                         <span className="text-foreground">

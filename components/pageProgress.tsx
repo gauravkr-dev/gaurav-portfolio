@@ -40,11 +40,11 @@ const PageProgress = () => {
             <NumberFlow
                 value={progressPercent}
                 className={cn(
-                    "text-foreground/20 absolute top-1 flex h-8 -translate-y-full items-center justify-center px-4 text-xs font-medium tabular-nums opacity-0 group-hover:opacity-100",
+                    "absolute top-1 flex h-8 -translate-y-full items-center justify-center px-4 text-xs font-medium tabular-nums opacity-0 group-hover:opacity-100",
                 )}
                 suffix="%"
             />
-            <div className="bg-background/30 flex size-12 items-center justify-center rounded-2xl border backdrop-blur">
+            <div className="bg-transparent flex size-12 items-center justify-center rounded-2xl border border-neutral-400/60 dark:border-border backdrop-blur">
                 <svg
                     className={cn("size-10")}
                     viewBox="0 0 48 48"

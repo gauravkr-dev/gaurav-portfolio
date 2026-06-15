@@ -52,7 +52,7 @@ const SkillSection = () => {
                 {skills.map((skill) => (
                     <Tooltip key={`${skill.category}-${skill.slug}`} >
                         <TooltipTrigger asChild>
-                            <div key={`${skill.category}-${skill.slug}`} className='flex items-center gap-2 border border-border rounded-lg p-2 group'>
+                            <div key={`${skill.category}-${skill.slug}`} className='flex items-center gap-2 border border-neutral-400/60 dark:border-border rounded-lg p-2 group'>
                                 <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.slug}/${skill.slug}-original.svg`} alt={`${skill.name} icon`} className='w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 group-hover:scale-110 transition-transform duration-200' />
                             </div>
                         </TooltipTrigger>

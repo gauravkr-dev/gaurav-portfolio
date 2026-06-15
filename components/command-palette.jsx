@@ -453,13 +453,10 @@ export function CommandPaletteSearchTrigger({ className = "" }) {
       className={`
         inline-flex items-center gap-2
         pl-2.5 pr-2 h-8
-        bg-white dark:bg-neutral-950
-        border border-neutral-200 dark:border-neutral-800
+        border border-neutral-400/60 dark:border-border
         rounded-full cursor-pointer
         text-neutral-500
-        transition-all duration-150 ease-out
-        hover:bg-neutral-50 hover:border-neutral-300 dark:hover:bg-neutral-900/40 dark:hover:border-neutral-700/50
-        
+        transition-all duration-150 ease-in-out        
         ${className}
       `}
     >

@@ -15,7 +15,7 @@ import { Separator } from "@/components/ui/separator"
 import type { ChevronsUpDownIconHandle } from "@/components/chevrons-up-down-icon"
 import { ChevronsUpDownIcon } from "@/components/chevrons-up-down-icon"
 import { BriefcaseBusinessIcon, InfinityIcon } from "lucide-react"
-import { Link000, Link001 } from "@/components/linkAnimation"
+import { Link001 } from "@/components/linkAnimation"
 
 export type ExperiencePositionItemType = {
   /** Unique identifier for the position */
@@ -89,7 +89,7 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
   return (
     <div className="space-y-4 py-4">
       <div className="not-prose flex items-center gap-3">
-        <div className="flex size-6 shrink-0 items-center justify-center">
+        <div className="flex size-6 shrink-0 items-center justify-center ">
           {experience.companyLogo ? (
             <img
               src={experience.companyLogo}
@@ -125,7 +125,7 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
         )}
       </div>
 
-      <div className="relative space-y-4 before:absolute before:left-3 before:h-full before:w-px before:bg-border">
+      <div className="relative space-y-4 before:absolute before:left-3 before:h-full before:w-px before:bg-neutral-400/60 before:content-[''] before:inset-0 dark:before:bg-border">
         {experience.positions.map((position) => (
           <ExperiencePositionItem key={position.id} position={position} />
         ))}
@@ -165,7 +165,7 @@ export function ExperiencePositionItem({
       disabled={!position.description}
       asChild
     >
-      <div className="relative last:before:absolute last:before:h-full last:before:w-4 last:before:bg-background">
+      <div className="relative last:before:absolute last:before:h-full last:before:w-4">
         <CollapsibleTrigger
           className={cn(
             "group/experience-position not-prose block w-full text-left select-none",
@@ -177,8 +177,9 @@ export function ExperiencePositionItem({
             <div
               className={cn(
                 "flex size-6 shrink-0 items-center justify-center rounded-lg",
-                "bg-muted text-muted-foreground",
-                "border border-muted-foreground/15 ring-1 ring-line ring-offset-1 ring-offset-background",
+                "text-muted-foreground",
+                "bg-white dark:bg-background/60",
+                "border ring-1 ring-line ring-offset-1 ring-offset-background",
                 "[&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
               )}
             >
@@ -278,7 +279,7 @@ function Skill({ className, ...props }: ComponentProps<"span">) {
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-md border bg-muted/50 px-1.5 py-0.5 font-mono text-xs text-muted-foreground",
+        "inline-flex items-center rounded-md border border-neutral-400/60 dark:border-border px-1.5 py-0.5 font-mono text-xs text-muted-foreground",
         className
       )}
       {...props}
