@@ -6,6 +6,7 @@ import Navbar from "./_components/Navbar/Navbar";
 import FooterView from "./_components/footer/footer-view";
 import Background from "@/components/background";
 import Script from "next/script";
+import NextTopLoader from "nextjs-toploader";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -42,6 +43,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <Providers>
+          <NextTopLoader
+            color="#FF6900"
+            height={2}
+            showSpinner={false}
+          />
           <Background />
           <Navbar />
           {children}
