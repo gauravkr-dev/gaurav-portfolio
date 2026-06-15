@@ -11,7 +11,7 @@ import { useState } from "react";
 
 import { cn } from "@/lib/utils";
 
-const Skiper89 = () => {
+const PageProgress = () => {
     const { scrollYProgress } = useScroll();
     const [progressPercent, setProgressPercent] = useState(0);
 
@@ -80,4 +80,4 @@ const Skiper89 = () => {
     );
 };
 
-export { Skiper89 };
+export { PageProgress };

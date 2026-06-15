@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import CommandSearchWrapper from './CommandSearch'
 import Link from 'next/link';
+import { Link000 } from '@/components/linkAnimation';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -21,9 +22,9 @@ const Navbar = () => {
                     <Link href="/" className="text-2xl font-bold mr-1 md:mr-6" aria-label="Gaurav Kumar">
                         <Image src="/gaurav_logo21.png" alt="Gaurav Kumar" width={38} height={38} className="rounded-full text-orange-500" />
                     </Link>
-                    <Link href="/projects" className="text-muted-foreground hover:text-foreground duration-200 link" aria-label="Gaurav Kumar">Projects</Link>
-                    <Link href="/#contact" className="text-muted-foreground hover:text-foreground duration-200 link" aria-label="Gaurav Kumar">Contact</Link>
-                    <Link href="/blogs" className="text-muted-foreground hover:text-foreground duration-200 link" aria-label="Gaurav Kumar">Blogs</Link>
+                    <Link000 href="/projects" className="text-muted-foreground hover:text-foreground duration-200 " aria-label="Gaurav Kumar">Projects</Link000>
+                    <Link000 href="/#contact" className="text-muted-foreground hover:text-foreground duration-200 " aria-label="Gaurav Kumar">Contact</Link000>
+                    <Link000 href="/blogs" className="text-muted-foreground hover:text-foreground duration-200 " aria-label="Gaurav Kumar">Blogs</Link000>
                 </div>
                 <div className="flex items-center">
                     <div>

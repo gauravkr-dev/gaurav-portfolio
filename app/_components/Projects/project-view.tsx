@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { GalleryVerticalEnd, Link as WebsiteLink } from 'lucide-react'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import Link from 'next/link';
+import { Link001 } from '@/components/linkAnimation'
 
 const ProjectView = () => {
     return (
@@ -19,9 +20,9 @@ const ProjectView = () => {
                     <div key={project.id} className="flex flex-col">
                         <img src={project.image} alt={project.name} className="w-full h-auto mb-4 rounded-lg border border-border" />
                         <div className="flex items-center justify-between mb-2">
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="link">
+                            <Link001 href={project.link} className="">
                                 <h3 className="text-lg font-semibold" style={{ fontFamily: "var(--font-geist-mono)" }}>{project.name}</h3>
-                            </a>
+                            </Link001>
                             <div className="flex items-center gap-4 text-muted-foreground">
                                 <Tooltip>
                                     <TooltipTrigger>

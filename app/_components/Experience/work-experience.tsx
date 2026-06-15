@@ -15,6 +15,7 @@ import { Separator } from "@/components/ui/separator"
 import type { ChevronsUpDownIconHandle } from "@/components/chevrons-up-down-icon"
 import { ChevronsUpDownIcon } from "@/components/chevrons-up-down-icon"
 import { BriefcaseBusinessIcon, InfinityIcon } from "lucide-react"
+import { Link000, Link001 } from "@/components/linkAnimation"
 
 export type ExperiencePositionItemType = {
   /** Unique identifier for the position */
@@ -103,14 +104,11 @@ export function ExperienceItem({ experience }: ExperienceItemProps) {
 
         <h3 className="text-lg leading-snug font-semibold" style={{ fontFamily: "var(--font-geist-mono)" }}>
           {experience.companyWebsite ? (
-            <a
-              className="link"
+            <Link001
               href={experience.companyWebsite}
-              target="_blank"
-              rel="noopener noreferrer"
             >
               {experience.companyName}
-            </a>
+            </Link001>
           ) : (
             experience.companyName
           )}

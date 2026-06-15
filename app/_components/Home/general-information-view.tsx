@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Lightbulb, Link, Mail, MapPin, Mars, Phone } from 'lucide-react'
 import React from 'react'
 import { CurrentLocalTimeItem } from './current-local-time-item'
+import { Link001 } from '@/components/linkAnimation'
 
 const GeneralInformationView = () => {
     return (
@@ -11,16 +12,14 @@ const GeneralInformationView = () => {
                 <Button variant="outline" size="icon" className="rounded-lg">
                     <Lightbulb />
                 </Button>
-                <span className="text-muted-foreground">
+                <span className="text-muted-foreground flex items-center gap-2">
                     Founder of{" "}
-                    <a
+                    <Link001
                         href="http://localhost:3000"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="transition-colors mx-1 text-foreground link"
+                        className="text-foreground"
                     >
                         @SyncInfo
-                    </a>
+                    </Link001>
                 </span>
             </div>
             <div className="flex items-start justify-center gap-2 sm:gap-4 flex-col sm:flex-row">
@@ -30,15 +29,12 @@ const GeneralInformationView = () => {
                             <MapPin />
                         </Button>
                         <span className="text-muted-foreground">
-
-                            <a
+                            <Link001
                                 href="https://www.google.com/maps/place/Nalanda,+Bihar,+India/@25.1356762,85.4222651,12z/data=!3m1!4b1!4m5!3m4!1s0x39f2e6cfae7a9d9f:0x9c8c8b9a1a1a1a1!8m2!3d25.1356762!4d85.4222651"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="transition-colors mx-1 text-foreground link"
+                                className="text-foreground"
                             >
                                 Nalanda, Bihar, India
-                            </a>
+                            </Link001>
                         </span>
                     </div>
                     <div className="flex items-center gap-4">
@@ -46,12 +42,12 @@ const GeneralInformationView = () => {
                             <Phone />
                         </Button>
                         <span className="text-muted-foreground">
-                            <a
+                            <Link001
                                 href="tel:+911234567890"
-                                className="transition-colors mx-1 text-foreground link"
+                                className="text-foreground"
                             >
                                 +91 977 157 0572
-                            </a>
+                            </Link001>
                         </span>
                     </div>
                     <div className="flex items-center gap-4">
@@ -59,14 +55,9 @@ const GeneralInformationView = () => {
                             <Link />
                         </Button>
                         <span className="text-muted-foreground">
-                            <a
-                                href="https://gauravkr-dev.vercel.app"
-                                className="transition-colors mx-1 text-foreground link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
+                            <Link001 href="https://gauravkr-dev.vercel.app" className="text-foreground">
                                 gauravkr-dev.vercel.app
-                            </a>
+                            </Link001>
                         </span>
                     </div>
                 </div>
@@ -81,12 +72,12 @@ const GeneralInformationView = () => {
                             <Mail />
                         </Button>
                         <span className="text-muted-foreground">
-                            <a
+                            <Link001
                                 href="mailto:gauravlabs.dev@gmail.com"
-                                className="transition-colors mx-1 text-foreground link"
+                                className="text-foreground"
                             >
                                 gauravlabs.dev@gmail.com
-                            </a>
+                            </Link001>
                         </span>
                     </div>
                     <div className="flex items-center gap-4">

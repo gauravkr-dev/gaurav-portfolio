@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 "use client"
 import React from 'react'
-import { Button } from '@/components/ui/button'
 import { Link } from 'lucide-react'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { ProjectsData } from '@/app/_components/Projects/project-data'
+import { Link001 } from '@/components/linkAnimation'
 
 const ProjectsView = () => {
     return (
@@ -18,9 +18,9 @@ const ProjectsView = () => {
                     <div key={project.id} className="flex flex-col">
                         <img src={project.image} alt={project.name} className="w-full h-auto mb-4 rounded-lg border border-border" />
                         <div className="flex items-center justify-between mb-2">
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="link">
+                            <Link001 href={project.link}>
                                 <h3 className="text-lg font-semibold" style={{ fontFamily: "var(--font-geist-mono)" }}>{project.name}</h3>
-                            </a>
+                            </Link001>
                             <div className="flex items-center gap-4 text-muted-foreground">
                                 <Tooltip>
                                     <TooltipTrigger>
