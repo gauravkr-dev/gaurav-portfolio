@@ -80,7 +80,7 @@ function TestimonialCard({
             <div className="absolute -inset-x-4 -top-px h-px dark:bg-border bg-neutral-400/60" />
             <div className="absolute -right-4 -bottom-px -left-4 h-px dark:bg-border bg-neutral-400/60" />
             <DecorIcon className="size-3.5" position="top-left" />
-
+            <DecorIcon className="size-3.5" position="bottom-right" />
             <blockquote className="flex gap-4">
                 <QuoteIcon aria-hidden="true" className="size-6 shrink-0 stroke-1 " />
 

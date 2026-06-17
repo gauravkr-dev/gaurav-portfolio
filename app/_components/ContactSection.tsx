@@ -101,6 +101,8 @@ const ContactSection = () => {
                     <div className="absolute -right-4 -bottom-px -left-4 h-px dark:bg-border bg-neutral-400/60" />
                     <DecorIcon className="size-3.5" position="top-left" />
                     <DecorIcon className="size-3.5" position="bottom-right" />
+                    <DecorIcon className="size-3.5" position="top-right" />
+                    <DecorIcon className="size-3.5" position="bottom-left" />
                     <a href="https://cal.com/gaurav-kumar-dev/web-development-consultation" className="inline-flex items-center  gap-2 text-sm text-primary rounded-lg border border-neutral-400/60 dark:border-border px-4 py-2 transition-colors hover:bg-primary/10" target="_blank" rel="noopener noreferrer">
                         <CalendarDays className="size-4" />
                         Schedule a meeting
